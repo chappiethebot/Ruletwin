@@ -1,5 +1,15 @@
 # RuleTwin repository audit
 
+## v5 review: 2026-10-04
+
+The latest independently checked baseline is commit `46e7c41`, snapshot `snap-96c4ceacda7b`: **48 rules, 500 properties, 24,000 rule/address pairs, 511 unknown results on 207 properties, 369 questions and zero export/replay label mismatches**. The 65 files in the new participant folder are byte-identical to the earlier pack. The judges confirm v5 controls: T1–T5 only; no participant scorer/key; videos show own validation; team-captured link-only text is research, not citation credit. Earlier counts and scorer/T6/version-conflict blockers below are historical.
+
+See [V5_CHALLENGE_REVIEW.md](V5_CHALLENGE_REVIEW.md) for the full updated audit, dataset outcomes, requirements matrix and prioritized remaining work. Forty-five rules have exact supplied headline support; three use S037/S059 research text, including 90 positive local-ban results. There are 36 candidate condition/exemption-leaf quote gaps; headline exactness is not complete field provenance. The fresh reference replay is 31 correct definite answers out of 33, three correctly indeterminate cases and one unmatched selector. C35/C37 and provision/field/history/assumption gaps remain open.
+
+Repairs are prepared separately while Claude Code edits the main checkout: manifest/text/URL/offset eligibility with pinned hashes, actual research source IDs, UI/audit labels, and fixed-test protection. Isolated snapshot `snap-3e8d479e4ac6` preserves applicability counts and passes 55 tests, typecheck, lint, production Webpack build, independent schema/CSV/quote checks and 16 browser journeys. It was not activated in the main checkout. Default Turbopack verification after integration and public deployment remain unverified. There are 17 nonempty penalty fields, not 18 populated penalties.
+
+## Historical audit baseline
+
 Audited 2026-10-04 against commit `4f2e38a` and the existing working tree. Scope: first-party application, engine, CLI pipeline, evidence adapters, tests, configuration, documentation, and generated artifact consistency. Ponytail supplied the complexity review; Caveman supplied concise repository exploration guidance. This is an engineering audit, not an independent legal review or an organizer score.
 
 ## Continuation verification: current status

@@ -2,10 +2,34 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
-import { consolidate, loadProperties, publishGates } from "./publish.ts";
+import { consolidate, loadProperties, publishGates, combineChangeTests } from "./publish.ts";
+import type { ChangeTest } from "../src/lib/engine/changes.ts";
 import { DATA_DIR, STARTER_DIR, readJson } from "./config.ts";
+import { loadSuppliedCorpus, verifyCorpusCitation } from "../src/lib/corpus.ts";
 
 const ready = fs.existsSync(path.join(STARTER_DIR, "schema", "rule_record.schema.json")) && fs.existsSync(path.join(DATA_DIR, "extraction", "candidates.json"));
+
+test("extension cases cannot overwrite or duplicate the fixed supplied change tests", () => {
+  const official = { test_id: "T1" } as ChangeTest;
+  const extension = { test_id: "EXT1" } as ChangeTest;
+  assert.deepEqual(combineChangeTests([official], [extension]), [official, extension]);
+  assert.throws(() => combineChangeTests([official], [{ ...extension, test_id: "T1" }]), /extensions cannot replace/);
+  assert.throws(() => combineChangeTests([official], [extension, extension]), /duplicate change test_id/);
+});
+
+test("real corpus distinguishes exact supplied headlines from research and rejects forged eligibility", { skip: !ready && "starter pack or candidates not present" }, () => {
+  const cands = readJson<any[]>(path.join(DATA_DIR, "extraction", "candidates.json"));
+  const ledger = readJson<any[]>(path.join(DATA_DIR, "extraction", "ledger.json"));
+  const rules = consolidate(cands);
+  const corpus = loadSuppliedCorpus(path.join(STARTER_DIR, "corpus"));
+  for (const r of rules) r.source.corpus = verifyCorpusCitation(r, corpus);
+  const research = rules.filter((r) => !r.source.corpus!.eligible);
+  assert.deepEqual(research.map((r) => r.source.doc_id).sort(), ["S037", "S037", "S059"]);
+  assert.ok(rules.every((r) => r.source.doc_id === r.source_doc_id));
+  assert.deepEqual(publishGates(rules, loadProperties(), cands, ledger, [], "2026-10-01"), []);
+  research[0].source.corpus!.eligible = true;
+  assert.ok(publishGates(rules, loadProperties(), cands, ledger, [], "2026-10-01").some((p) => p.includes("corpus eligibility metadata")));
+});
 
 test("publish gates enforce supplied schema types, array items and numeric bounds", { skip: !ready && "starter pack or candidates not present" }, () => {
   const cands = readJson<any[]>(path.join(DATA_DIR, "extraction", "candidates.json"));

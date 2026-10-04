@@ -8,10 +8,10 @@ v5 submission package: `rules.json`, `lookups.json`, `changes.json`, a **live de
 3. **Every answer traceable:** open **Source evidence** (exact quoted span, URL, retrieval date, snapshot). Show the confidence badge, then open the **Audit view** (source, retrieval date, as-of date, reasoning boundary for every answer) and download its JSON.
 4. **Missing facts handled honestly:** `1609 ADDISON ST, Berkeley` (A0005, no year built). A conditional rule shows the outcome per certificate-of-occupancy date and one decisive question. Answer it: the "Hypothetical" banner appears and results update; the audit view still shows official facts only. Reset.
 5. **Change cases (Changes page):** T1 (CA, 250 addresses not yet effective → applies), T2 (90 Hoboken/Jersey City addresses, none in Newark), T3 (140 NJ addresses, 90 conflict flags with the local bans), T4 (S.2983 and H.5222 pending, hypothetical impact on 110 MA addresses), T5 (struck ballot question: no rent cap, empty set). Then a custom two-date comparison.
-6. **Honesty about sources:** a Hoboken rule card shows "Source outside supplied corpus" (team-captured copy of a link-only page; no citation credit).
+6. **Honesty about sources:** a Hoboken rule card shows "Supplied citation unverified"; open the drawer/audit to see S037 and its reason. This is a research capture with no citation credit. A supplied rule's audit shows its verified headline support and text hash. Neither proves every compiled field.
 
 ## Validation to show (instead of a score)
-- `npm test` → 50/50; `npm run e2e` → 16/16 at 1440 px and 390 px.
+- Re-run `npm test` and `npm run e2e` for the frozen final release. The isolated v5 repair passed 55/55 and 16/16 at 1440 px and 390 px; see `docs/V5_CHALLENGE_REVIEW.md`. Do not display those totals as a fresh main/deployed-release run until repeated there.
 - `npm run publish` → fail-closed gates (official schema, exact quote at recorded offsets, unique ids, evidence re-validation), then the T1–T5 counts above.
 - `submission/audit_log.json`: input hashes (v5 pack), extraction ledger (89 entries, 0 errors), output hashes, rerun commands.
 - `docs/EVALUATION.md`: 37 AI-reviewed reference cases (31/33 definite answers correct, misses explained). Say clearly that it is our own check, not an official score.

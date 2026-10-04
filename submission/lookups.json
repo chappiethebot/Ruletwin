@@ -61,7 +61,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -217,8 +217,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -421,7 +421,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -657,7 +657,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -949,7 +949,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -1011,8 +1011,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -1391,8 +1391,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -1471,7 +1471,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -1813,7 +1813,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -2273,7 +2273,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -2391,7 +2391,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -2671,7 +2671,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -2795,7 +2795,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -2907,7 +2907,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -4497,7 +4497,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -5031,7 +5031,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -5149,7 +5149,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -5255,8 +5255,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -5335,8 +5335,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -5787,7 +5787,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -5893,7 +5893,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -5955,7 +5955,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -6011,8 +6011,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -6303,7 +6303,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -6365,8 +6365,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -6601,8 +6601,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -6793,7 +6793,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -6979,7 +6979,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -7315,7 +7315,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -7657,7 +7657,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -7955,7 +7955,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -8117,7 +8117,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -9161,8 +9161,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -9241,8 +9241,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -9371,7 +9371,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -9433,7 +9433,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -9539,7 +9539,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -9825,7 +9825,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -9981,7 +9981,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -10341,7 +10341,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -10559,7 +10559,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -10615,7 +10615,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -10671,8 +10671,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -10807,7 +10807,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -10869,7 +10869,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -10931,7 +10931,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -10993,8 +10993,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -11073,8 +11073,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -11327,8 +11327,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -11593,8 +11593,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -11853,8 +11853,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -12113,8 +12113,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -12311,7 +12311,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -12753,8 +12753,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -13205,7 +13205,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -13447,7 +13447,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -13863,8 +13863,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -14179,8 +14179,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -14309,7 +14309,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -14427,7 +14427,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -14489,7 +14489,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -14813,7 +14813,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -15031,7 +15031,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -15143,7 +15143,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -15391,8 +15391,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -15471,7 +15471,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -15577,8 +15577,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -15707,7 +15707,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -15769,7 +15769,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -15949,7 +15949,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -16005,7 +16005,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -16391,8 +16391,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -16533,7 +16533,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -16713,8 +16713,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -17029,7 +17029,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -17085,7 +17085,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -17147,8 +17147,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -17767,7 +17767,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -18289,7 +18289,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -18781,8 +18781,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -18861,8 +18861,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -18941,8 +18941,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -19021,7 +19021,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -19077,7 +19077,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -19307,7 +19307,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -19787,8 +19787,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -20371,7 +20371,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -20589,7 +20589,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -20645,8 +20645,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -20725,7 +20725,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -21229,7 +21229,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -21285,7 +21285,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -21471,8 +21471,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -21837,8 +21837,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -22023,7 +22023,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -22085,8 +22085,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -22339,7 +22339,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -22675,8 +22675,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -22973,7 +22973,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -23035,7 +23035,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -23241,7 +23241,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -23303,7 +23303,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -23365,8 +23365,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -23619,7 +23619,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -23917,7 +23917,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -24253,7 +24253,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -24315,8 +24315,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -24557,7 +24557,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -24619,7 +24619,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -24737,7 +24737,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -24799,8 +24799,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -25109,7 +25109,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -25433,8 +25433,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -25737,7 +25737,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -25793,7 +25793,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -25893,7 +25893,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -26397,7 +26397,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -26553,7 +26553,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -26833,7 +26833,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -27063,7 +27063,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -27237,7 +27237,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -27689,8 +27689,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -27769,8 +27769,8 @@
       {
         "team_rule_id": "r-af5faa",
         "result": "applies",
-        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
-        "conflict_flag": false
+        "explanation": "Berkeley, CA city rule; in force (effective 2026-01). Coverage conditions are met on the supplied facts. Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record. Flagged for human review. Source: Berkeley Municipal Code ch. 13.63, § 13.63.030 (Ordinance No. 7,992-N.S.) (D001, retrieved 2026-10-01); as of 2026-10-01.",
+        "conflict_flag": true
       },
       {
         "team_rule_id": "r-cc1eed",
@@ -27849,7 +27849,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -27905,7 +27905,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -28079,7 +28079,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -28453,7 +28453,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -28887,7 +28887,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -28937,7 +28937,7 @@
       {
         "team_rule_id": "r-2631aa",
         "result": "applies",
-        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Hoboken, NJ city rule; in force (effective 2025-07). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Hoboken City Code ch. 158-2 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {
@@ -29199,7 +29199,7 @@
       {
         "team_rule_id": "r-8c87fb",
         "result": "applies",
-        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team-captured copy of link-only D037; not supplied corpus text, retrieved 2026-10-04); as of 2026-10-01.",
+        "explanation": "Jersey City, NJ city rule; in force (effective 2025-06). Coverage conditions are met on the supplied facts. Possible conflict/preemption with r-6e5a6f; flagged for human review. Source: Jersey City Code § 218-12 (team capture S037 of link-only D037; Source is not mapped in the distributed corpus, retrieved 2026-10-04); as of 2026-10-01.",
         "conflict_flag": true
       },
       {

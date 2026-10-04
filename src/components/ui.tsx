@@ -39,7 +39,7 @@ export function ConflictBadge() {
 }
 
 export function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <div className={`rounded-lg border border-line bg-card p-5 sm:p-6 ${className}`}>{children}</div>;
+  return <div className={`rounded-2xl border border-line bg-card p-5 sm:p-6 ${className}`}>{children}</div>;
 }
 
 export function Disclaimer({ asOf, snapshot }: { asOf?: string; snapshot?: string }) {
@@ -56,4 +56,4 @@ export function Disclaimer({ asOf, snapshot }: { asOf?: string; snapshot?: strin
 export const btn = "inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 text-[14px] font-medium transition-colors disabled:opacity-40";
 export const btnPrimary = `${btn} bg-ink text-white hover:bg-black`;
 export const btnSecondary = `${btn} border border-line bg-card text-ink hover:border-ink`;
-export const input = "min-h-11 w-full rounded-lg border border-line bg-card px-3 text-ink placeholder:text-muted hover:border-[#cfcfcb] focus:border-ink";
+export const input = "min-h-11 w-full rounded-2xl border border-line bg-card px-3 text-ink placeholder:text-muted hover:border-[#cfcfcb] focus:border-ink";

@@ -82,7 +82,8 @@ export function resolveFor(snap: Snapshot, propertyId: string, asOf: string, ans
 
 // Evidence for one rule: the quoted span in context plus separate condition quotes.
 export interface Evidence {
-  in_corpus: boolean; // false = team-captured copy of a link-only page (not a corpus citation)
+  in_corpus: boolean; // only true for a publication-verified supplied headline quote
+  corpus_reason: string;
   citation: string;
   url: string | null;
   retrieved_at: string | null;
@@ -106,7 +107,8 @@ export function evidenceFor(snap: Snapshot, rule: Rule): Evidence {
   const url = /^https?:\/\//i.test(rule.source_url) ? rule.source_url : null;
   return {
     citation: rule.citation, url, retrieved_at: rule.source.retrieved_at, source_type: rule.source.source_type,
-    in_corpus: /^D\d+$/.test(rule.source.doc_id),
+    in_corpus: rule.source.corpus?.eligible === true,
+    corpus_reason: rule.source.corpus?.reason ?? "Supplied-text eligibility was not verified in this snapshot; republish to check it.",
     doc_id: rule.source.doc_id, effective_date: rule.effective_date, status_kind: rule.logic.status_kind,
     snapshot_id: snap.id,
     before: ok ? text.slice(Math.max(0, start - 500), start) : "",
@@ -135,7 +137,9 @@ export function auditRows(snap: Snapshot, r: NonNullable<ReturnType<typeof resol
       : res.method === "limit_reached" ? "not checked exhaustively (computation limit)" : "needs human review";
     return {
       rule_id: e.rule_id, title: rule.title, citation: rule.citation, result: e.result, as_of: asOf,
-      source_doc_id: rule.source.doc_id, in_supplied_corpus: /^D\d+$/.test(rule.source.doc_id),
+      source_doc_id: rule.source.doc_id, in_supplied_corpus: rule.source.corpus?.eligible === true,
+      corpus_reason: rule.source.corpus?.reason ?? "Not verified in this snapshot.",
+      supplied_text_sha256: rule.source.corpus?.text_sha256 ?? null,
       source_url: rule.source_url, retrieved_at: rule.source.retrieved_at, quoted_span: rule.quoted_span,
       reasoning_boundary: boundary, presumptions: e.presumptions, conflict_flag: e.conflict_flag,
       confidence: res.confidence ?? null, extracted_by: `${rule.extraction.model} · ${rule.extraction.prompt_version}`,

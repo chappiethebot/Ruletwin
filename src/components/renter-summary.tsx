@@ -30,18 +30,18 @@ export function RenterSummary({ evaluations, rules, asOf, lang, labels, switchHr
   const t = T[lang];
   const order = ["applies", "superseded", "unknown", "not_yet_effective", "pending"];
   return (
-    <section aria-labelledby="renter-summary" lang={lang} className="rounded-lg border border-line border-t-[3px] border-t-ink bg-card p-5 sm:p-6">
+    <section aria-labelledby="renter-summary" lang={lang} className="rounded-3xl bg-bg p-6 sm:p-10">
       <div className="flex flex-wrap items-center gap-3">
-        <h2 id="renter-summary" className="text-[19px] font-semibold">{t.title}</h2>
-        <Link href={switchHref} className="ml-auto flex min-h-11 items-center rounded-lg px-3 text-[14px] font-medium text-accent underline" lang={lang === "en" ? "es" : "en"}>{t.switch}</Link>
+        <h2 id="renter-summary" className="text-[24px] font-semibold">{t.title}</h2>
+        <Link href={switchHref} className="ml-auto flex min-h-10 items-center rounded-full border border-line bg-white px-4 text-[14px] font-medium transition-colors hover:border-ink" lang={lang === "en" ? "es" : "en"}>{t.switch}</Link>
       </div>
       <p className="text-[14px] text-muted">{t.lead} <span className="font-mono">{asOf}</span>.</p>
-      <dl className="mt-3 flex flex-col gap-3">
+      <dl className="mt-6 flex flex-col divide-y divide-line">
         {CATEGORIES.map((cat: Category) => {
           const items = evaluations.filter((e) => e.result !== "not_applicable" && rules.get(e.rule_id)?.category === cat)
             .sort((a, b) => order.indexOf(a.result) - order.indexOf(b.result));
           return (
-            <div key={cat} className="grid gap-1 sm:grid-cols-[200px_1fr]">
+            <div key={cat} className="grid gap-1 py-4 first:pt-0 last:pb-0 sm:grid-cols-[200px_1fr]">
               <dt className="font-semibold">{t.cats[cat]}</dt>
               <dd className="flex flex-col gap-1 text-[15px]">
                 {items.length ? items.map((e) => {
@@ -57,7 +57,7 @@ export function RenterSummary({ evaluations, rules, asOf, lang, labels, switchHr
           );
         })}
       </dl>
-      <p className="mt-3 text-[13px] font-semibold">{t.disclaimer}</p>
+      <p className="mt-6 text-[13px] text-muted">{t.disclaimer}</p>
     </section>
   );
 }

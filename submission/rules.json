@@ -20,8 +20,8 @@
       "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
       "quoted_span": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described \nin subsection A when setting rents or occupancy levels for residential dwelling units in \nthe City of Berkeley.",
       "confidence": 0.8,
-      "conflict_flag": false,
-      "conflict_note": null,
+      "conflict_flag": true,
+      "conflict_note": "Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record.",
       "source_in_supplied_corpus": true
     },
     {

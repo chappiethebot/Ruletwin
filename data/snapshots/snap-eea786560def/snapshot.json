@@ -1,9 +1,9 @@
 {
-  "id": "snap-96c4ceacda7b",
-  "content_sha256": "96c4ceacda7b71c05c9a8889bea8c74ff9af199328c91ca1ddbdb50ca16f76b5",
-  "engine_sha256": "f46a35aae4f4acd7defe26910d7eb8eebe64f7b18154973aa7e6f675920448d2",
+  "id": "snap-eea786560def",
+  "content_sha256": "eea786560def90b880c02c565c77beb145877523ff6e7a3b92106f5b56492e92",
+  "engine_sha256": "0611f2351126b933393de5e0ab8d9dc57d79655af6498a3f7f568e458e2718dd",
   "exemption_policy": "disclosed-presumption",
-  "created_at": "2026-10-04T10:38:48.357Z",
+  "created_at": "2026-10-04T11:46:54.033Z",
   "engine_version": "engine-v1",
   "default_as_of": "2026-10-01",
   "rule_count": 48,
@@ -711,14 +711,15 @@
       "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
       "quoted_span": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described \nin subsection A when setting rents or occupancy levels for residential dwelling units in \nthe City of Berkeley.",
       "confidence": 0.8,
-      "conflict_flag": false,
-      "conflict_note": null,
+      "conflict_flag": true,
+      "conflict_note": "Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record.",
       "logic": {
         "status_kind": "enacted",
         "conditions": [],
         "exemptions": [],
         "yields_to_local": false,
-        "conflict_with_local": false
+        "conflict_with_local": false,
+        "unverified_effective_date": "Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record."
       },
       "source": {
         "doc_id": "D001",
@@ -726,13 +727,20 @@
         "retrieved_at": "2026-10-01T22:44Z",
         "source_type": "official",
         "start": 5086,
-        "end": 5283
+        "end": 5283,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D001",
+          "text_sha256": "7f24d692c68f42ed2ab11a2d1f8e060a951f8cf6a3974b4e8090e63081ad6f17",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
         "prompt_version": "extract-v4",
         "chunk_hash": "b8bbf8c0b95c5f8d6a2d633510d4371e50b9947722e452e0ed31080c5efc6ecf",
         "review": [
+          "Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001); verify against the official record.",
           "merged 2 extractions: D001, S037"
         ]
       }
@@ -773,7 +781,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 2647,
-        "end": 2961
+        "end": 2961,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D005",
+          "text_sha256": "396972b4e199efe65ff763eae53ed8a81d99e17ba900c39f16bfb44c16637bed",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -922,7 +936,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 520,
-        "end": 676
+        "end": 676,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D004",
+          "text_sha256": "bb1b00d69bd3ead225e5bd758bf642256df1cb89dfa4275a5699266b78df30e1",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -976,7 +996,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 658,
-        "end": 898
+        "end": 898,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D008",
+          "text_sha256": "969848595b70aa2ff7b9e8420f610c36b914521c4ea4dd1d0656be776e90c39f",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -1205,7 +1231,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 11884,
-        "end": 12071
+        "end": 12071,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D006",
+          "text_sha256": "f1960db522de7f63158e64334835b37e52ae1d8fa8b510eeb314658aef4173fa",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -1286,7 +1318,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 294,
-        "end": 560
+        "end": 560,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D003",
+          "text_sha256": "a008c846fc4edd842994d8c5ea0367546e55319670e9687c5d1c7ccfdfa1ce40",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -1344,7 +1382,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 3941,
-        "end": 4180
+        "end": 4180,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D007",
+          "text_sha256": "2ba3028382b89ee70810a45e25dd9707297bd65512e2723f4f9bda514af57203",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -1404,7 +1448,13 @@
         "retrieved_at": "2026-10-01T22:44Z",
         "source_type": "official city-linked policy",
         "start": 686,
-        "end": 754
+        "end": 754,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D010",
+          "text_sha256": "61380f45cb66d87065eb029b6f5ee54dc704a0d059acc6136477337ce5f0cb73",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -1449,7 +1499,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 2038,
-        "end": 2159
+        "end": 2159,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D012",
+          "text_sha256": "aaed5c3d1e3aacb57a1f9a8fa9e855ecaa857bdbedc3d7b99a1992e7fc0aed0f",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -1494,7 +1550,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 3789,
-        "end": 4003
+        "end": 4003,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D022",
+          "text_sha256": "0699980875e6bf3d797abd8b734db7d449b295173e33668cc655e3b394c084ed",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -1539,7 +1601,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 2307,
-        "end": 2458
+        "end": 2458,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D026",
+          "text_sha256": "35ec54ef926471876977b9cad3f0db7ff5b77393bd0baad03ed30125949f8e7a",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -1760,7 +1828,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 1247,
-        "end": 1533
+        "end": 1533,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D023",
+          "text_sha256": "fdd8d7fca42103cf630c3a9a4ed217150eb17a6e180edd80c1d845ca5e8aa1fe",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -1928,7 +2002,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 1256,
-        "end": 1677
+        "end": 1677,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D024",
+          "text_sha256": "eb9c42af2b9a5c220ca37816f409f0bd3ea92a002a973283e779fdb72de18bd7",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2003,7 +2083,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 1434,
-        "end": 1785
+        "end": 1785,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D027",
+          "text_sha256": "511f8074b8f4959161fb4c7ec922c8fa963735b47c13d852b8a09ca42b922ecf",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2053,7 +2139,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 2689,
-        "end": 2961
+        "end": 2961,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D025",
+          "text_sha256": "48b1d005fb59f73082dc625d4038272f4bde950d2c93a70ef400a43b630e1511",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2123,7 +2215,13 @@
         "retrieved_at": "2026-10-01T22:36Z",
         "source_type": "official",
         "start": 2769,
-        "end": 2896
+        "end": 2896,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D029",
+          "text_sha256": "ce40e4d452c15e43e1bb07e7f03f7bd2bd738b2da614d1d21b7826f7e581e01c",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2168,7 +2266,13 @@
         "retrieved_at": "2026-10-04",
         "source_type": "secondary (law firm / news / mirror)",
         "start": 7624,
-        "end": 7762
+        "end": 7762,
+        "corpus": {
+          "eligible": false,
+          "doc_id": null,
+          "text_sha256": null,
+          "reason": "Source is not mapped in the distributed corpus."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2213,7 +2317,13 @@
         "retrieved_at": "2026-10-04",
         "source_type": "secondary (law firm / news / mirror)",
         "start": 7419,
-        "end": 7557
+        "end": 7557,
+        "corpus": {
+          "eligible": false,
+          "doc_id": null,
+          "text_sha256": null,
+          "reason": "Source is not mapped in the distributed corpus."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2273,7 +2383,13 @@
         "retrieved_at": "2026-10-01T22:36Z",
         "source_type": "official",
         "start": 3961,
-        "end": 4028
+        "end": 4028,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D036",
+          "text_sha256": "f444bed30ede0905ce671ac4b9addf27feaa31c9a74ba6ba537b7f8d77e81dce",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2343,7 +2459,13 @@
         "retrieved_at": "2026-10-01T22:36Z",
         "source_type": "official",
         "start": 7168,
-        "end": 7287
+        "end": 7287,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D041",
+          "text_sha256": "4d8837313d514bde68624c37ab37622dd950c542bdc74942702641519eae3ece",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2407,7 +2529,13 @@
         "retrieved_at": "2026-10-01T22:36Z",
         "source_type": "official",
         "start": 570,
-        "end": 686
+        "end": 686,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D040",
+          "text_sha256": "13f9d54597199b73e23ad12dcc38626d53bb30bd53d89a63b6a7f55ecc570425",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2480,7 +2608,13 @@
         "retrieved_at": "2026-10-01T22:36Z",
         "source_type": "official",
         "start": 1934,
-        "end": 2018
+        "end": 2018,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D041",
+          "text_sha256": "4d8837313d514bde68624c37ab37622dd950c542bdc74942702641519eae3ece",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2527,7 +2661,13 @@
         "retrieved_at": "2026-10-01T22:36Z",
         "source_type": "official",
         "start": 192,
-        "end": 274
+        "end": 274,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D045",
+          "text_sha256": "8bc537dfe4d0e00b829147ae82ba11d40bef8a2b0696f487c417ca517673bba7",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2572,7 +2712,13 @@
         "retrieved_at": "2026-10-01T22:36Z",
         "source_type": "official",
         "start": 248,
-        "end": 463
+        "end": 463,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D047",
+          "text_sha256": "9af3e5eba834b37a5115fef298f5e2a1c1fc0b93c1d69500aea9d6bc7ee24b93",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2635,7 +2781,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 1808,
-        "end": 2022
+        "end": 2022,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D052",
+          "text_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2683,7 +2835,13 @@
         "retrieved_at": "2026-10-01T22:56Z",
         "source_type": "official",
         "start": 1726,
-        "end": 1875
+        "end": 1875,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D057",
+          "text_sha256": "c678b42f8fc6ecfc7c7a6b1bdf6c68aec877daa80a53d62d5d2ca8176c967d7b",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2728,7 +2886,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 482,
-        "end": 584
+        "end": 584,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D011",
+          "text_sha256": "93835654c3483e7b169677f7a3ccdcf021b6edab4ac81ab7ad3091903de71ff2",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2773,7 +2937,13 @@
         "retrieved_at": "2026-10-04",
         "source_type": "secondary (law firm / news / mirror)",
         "start": 363,
-        "end": 549
+        "end": 549,
+        "corpus": {
+          "eligible": false,
+          "doc_id": null,
+          "text_sha256": null,
+          "reason": "Source is not mapped in the distributed corpus."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2818,7 +2988,13 @@
         "retrieved_at": "2026-10-01T22:36Z",
         "source_type": "official",
         "start": 425,
-        "end": 601
+        "end": 601,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D048",
+          "text_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2863,7 +3039,13 @@
         "retrieved_at": "2026-10-01T22:35Z",
         "source_type": "official",
         "start": 482,
-        "end": 584
+        "end": 584,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D011",
+          "text_sha256": "93835654c3483e7b169677f7a3ccdcf021b6edab4ac81ab7ad3091903de71ff2",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2908,7 +3090,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 37389,
-        "end": 37863
+        "end": 37863,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D049",
+          "text_sha256": "ac42593c79533c25223582de77eb5411d2f8ef501a0d027d2a61042b7e81d7ef",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -2969,7 +3157,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 5036,
-        "end": 5264
+        "end": 5264,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D052",
+          "text_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3035,7 +3229,13 @@
         "retrieved_at": "2026-10-01T22:56Z",
         "source_type": "official",
         "start": 8427,
-        "end": 8632
+        "end": 8632,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D069",
+          "text_sha256": "1fdbfb48743a46429c3f47dbd8d08c665739202361661e1a2f19b94bb0ec43a6",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3095,7 +3295,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 427,
-        "end": 612
+        "end": 612,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D066",
+          "text_sha256": "e06aa61acf6ddb50631d5be3c89c4029caccb13c0dcc7be888e0e64f8b182c2e",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3192,7 +3398,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 110983,
-        "end": 111104
+        "end": 111104,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D067",
+          "text_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3260,7 +3472,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 64694,
-        "end": 64852
+        "end": 64852,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D067",
+          "text_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3330,7 +3548,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 65297,
-        "end": 65469
+        "end": 65469,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D067",
+          "text_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3420,7 +3644,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 52772,
-        "end": 53183
+        "end": 53183,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D067",
+          "text_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3491,7 +3721,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 4230,
-        "end": 4369
+        "end": 4369,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D065",
+          "text_sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3567,7 +3803,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 42181,
-        "end": 42326
+        "end": 42326,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D067",
+          "text_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3612,7 +3854,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 15628,
-        "end": 15759
+        "end": 15759,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D076",
+          "text_sha256": "31b29a40becda1c218d4f64aedcb56a44241857b0f5d8b451c7b20b5737edc1e",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3812,7 +4060,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 10256,
-        "end": 10413
+        "end": 10413,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D073",
+          "text_sha256": "d1d4b9874a7c4b51a97cb81809e9ece2658f0f9e52898d904f90d48f3c1a140b",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3861,7 +4115,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 945,
-        "end": 1125
+        "end": 1125,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D081",
+          "text_sha256": "e3437f99eae3882641b5052fd7006f2a0304abd2033e1b721a8c32324be2afab",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3906,7 +4166,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 204,
-        "end": 378
+        "end": 378,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D079",
+          "text_sha256": "51f9490227bafc8a6f458c7e417f41bce3af07c1416fae77f281b987d97ef793",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -3970,7 +4236,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 258,
-        "end": 380
+        "end": 380,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D080",
+          "text_sha256": "924783981b92aabf2a5200517290879d008fd1e8c579969bdddaa28ff6f9fd7d",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -4018,7 +4290,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 414,
-        "end": 483
+        "end": 483,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D083",
+          "text_sha256": "764e9e3a023bd434458dfea8ffbb57e57d23e5f0a4939cc10948b9e495034d2f",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -4149,7 +4427,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 1122,
-        "end": 1292
+        "end": 1292,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D084",
+          "text_sha256": "fc10720530c3f1eeb733fe7954d39b62ad374c8d954053c61dea0a89444f08b3",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",
@@ -4236,7 +4520,13 @@
         "retrieved_at": "2026-10-01T22:37Z",
         "source_type": "official",
         "start": 956,
-        "end": 1080
+        "end": 1080,
+        "corpus": {
+          "eligible": true,
+          "doc_id": "D084",
+          "text_sha256": "fc10720530c3f1eeb733fe7954d39b62ad374c8d954053c61dea0a89444f08b3",
+          "reason": "Exact headline quote verified against supplied corpus text."
+        }
       },
       "extraction": {
         "model": "cli:sonnet",

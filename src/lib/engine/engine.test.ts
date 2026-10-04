@@ -169,3 +169,14 @@ test("use-code unit parsing and CSV", () => {
   assert.equal(unitsFromUse("A/125", "SUBSD HOUSING S- 8", "MA"), null);
   assert.deepEqual(parseCsv('a,b\n1,"x, ""y"""\n'), [{ a: "1", b: 'x, "y"' }]);
 });
+
+test("an effective date stated only by a research capture flags each answer for review, not the preemption path", () => {
+  const note = "Effective date 2026-01 is stated only in research capture S037, not in the supplied text (D001).";
+  const [ev] = evaluateProperty([rule({ level: "city", jurisdiction: "San Francisco, CA", effective_date: "2026-01", logic: logic({ unverified_effective_date: note }) })], prop(), "2026-10-01");
+  assert.equal(ev.result, "applies");
+  assert.equal(ev.conflict_flag, true);
+  assert.deepEqual(ev.conflict_with, []);
+  assert.ok(ev.explanation.includes(note) && !ev.explanation.includes("preemption"));
+  const [plain] = evaluateProperty([rule()], prop(), "2026-10-01");
+  assert.equal(plain.conflict_flag, false);
+});

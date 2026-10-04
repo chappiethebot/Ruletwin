@@ -377,10 +377,15 @@ export function resolveProperty(rules: Rule[], p: Property, asOf: string, opts: 
     }
   }
   // Disputed interpretations that do not change results still need human review.
-  for (const ev of out) if (ev.conflict_flag) {
+  for (const ev of out) if (ev.conflict_with.length) {
     const id = `preemption:${ev.rule_id}`;
     if (!blocking.has(id)) blocking.set(id, { id, kind: "disputed_legal_interpretation", label: `possible preemption/conflict involving ${ev.rule_id}`,
       question: "Human legal review: does the state law preempt the local ordinance?", options: [], decisive_for: [], irrelevant_for: [ev.rule_id], evidence_hint: null });
+  }
+  for (const ev of out) {
+    const note = rules.find((r) => r.team_rule_id === ev.rule_id)?.logic.unverified_effective_date;
+    if (note && ev.result !== "not_applicable") blocking.set(`date:${ev.rule_id}`, { id: `date:${ev.rule_id}`, kind: "disputed_legal_interpretation",
+      label: `unverified effective date of ${ev.rule_id}`, question: "Human legal review: confirm the effective date from the official record.", options: [], decisive_for: [], irrelevant_for: [ev.rule_id], evidence_hint: note });
   }
   // Ordered questions offer the finest partition over every rule, so one answer settles all categories.
   for (const b of blocking.values()) {

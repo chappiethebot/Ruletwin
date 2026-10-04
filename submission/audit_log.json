@@ -1,7 +1,7 @@
 {
-  "snapshot": "snap-96c4ceacda7b",
-  "content_sha256": "96c4ceacda7b71c05c9a8889bea8c74ff9af199328c91ca1ddbdb50ca16f76b5",
-  "engine_sha256": "f46a35aae4f4acd7defe26910d7eb8eebe64f7b18154973aa7e6f675920448d2",
+  "snapshot": "snap-eea786560def",
+  "content_sha256": "eea786560def90b880c02c565c77beb145877523ff6e7a3b92106f5b56492e92",
+  "engine_sha256": "0611f2351126b933393de5e0ab8d9dc57d79655af6498a3f7f568e458e2718dd",
   "engine_version": "engine-v1",
   "as_of": "2026-10-01",
   "exemption_policy": "disclosed-presumption",
@@ -251,8 +251,9 @@
         "conflict_flags": 0
       }
     },
-    "rules_json_sha256": "2459558dfcd5deff7464e28c2e44fcd06b676db608fecd06829a2240faabdd6d",
-    "lookups_json_sha256": "347fc409dad056b92aa4ccb8f76d076e31f6e4b8ba3510a60a15b19ebe3da1d5",
+    "extension_cases": [],
+    "rules_json_sha256": "add73646e0755033646b8c074f70f4b02833726c536287a269e09678046a19db",
+    "lookups_json_sha256": "8bf2c5edd3a23f4eace058f62862d869410501f760a57cd628684c0b13bd8ffb",
     "changes_json_sha256": "d28a19c604769a55e6b19dca9dcef7be4396f6eb51690d7c74bf70679017ed7f"
   },
   "reproduce": [

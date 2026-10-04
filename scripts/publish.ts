@@ -12,12 +12,20 @@ import { resolveProperty } from "../src/lib/engine/resolve.ts";
 import { factsFromRow, parseCsv } from "../src/lib/engine/facts.ts";
 import { runChange, type ChangeTest } from "../src/lib/engine/changes.ts";
 import type { Property, Rule } from "../src/lib/engine/types.ts";
+import { loadSuppliedCorpus, verifyCorpusCitation } from "../src/lib/corpus.ts";
 import { PROMPT_VERSION, loadManifest, type Candidate, type LedgerEntry } from "./extract.ts";
 import type { GeoResult } from "./geocode.ts";
 import { DATA_DIR, ROOT, STARTER_DIR, SUBMISSION_DIR, readJson, writeJson } from "./config.ts";
 
 export const ENGINE_VERSION = "engine-v1";
 const sha = (s: string) => crypto.createHash("sha256").update(s).digest("hex");
+
+export function combineChangeTests(supplied: ChangeTest[], extensions: ChangeTest[]): ChangeTest[] {
+  const tests = [...supplied, ...extensions];
+  if (new Set(tests.map((t) => t.test_id)).size !== tests.length)
+    throw new Error("duplicate change test_id; extensions cannot replace supplied cases");
+  return tests;
+}
 
 // Law key for de-duplication across documents. Bill numbers identify pending bills;
 // otherwise the section after "§" (or chapter / first number). City codes are keyed
@@ -172,11 +180,18 @@ export function consolidate(cands: Candidate[]): Rule[] {
       ? `Sources disagree on effective date: ${g.filter((c) => c.effective_date).map((c) => `${c.effective_date} (${c.doc_id})`).join(" vs ")}; using ${best.effective_date ?? dates[0]} from ${best.doc_id}.`
       : null;
     if (dateConflict) review.push(dateConflict);
+    // A date stated only by a team-captured research page (S###), while the supplied
+    // corpus text for the same law states none, is unverified: surface it for review.
+    const dated = g.filter((c) => c.effective_date);
+    const researchOnlyDate = dates.length > 0 && dated.every((c) => !/^D\d/.test(c.doc_id)) && g.some((c) => /^D\d/.test(c.doc_id))
+      ? `Effective date ${dates[0]} is stated only in research capture ${dated.map((c) => c.doc_id).join(", ")}, not in the supplied text (${g.filter((c) => /^D\d/.test(c.doc_id)).map((c) => c.doc_id).join(", ")}); verify against the official record.`
+      : null;
+    if (researchOnlyDate) review.push(researchOnlyDate);
     if (stageNote) review.push(stageNote);
     if (logicSrc !== best) review.push(`coverage conditions taken from ${logicSrc.doc_id}; quote from ${best.doc_id}`);
     for (const e of logicSrc.exemption_logic) if (!e.all.length) review.push(`exemption "${e.label}" has no testable property condition (text only; not evaluated)`);
     if (logicSrc.conditions.some((x) => !x.any.length)) review.push("empty condition group ignored");
-    const conflictNote = [best.conflict_note, dateConflict].filter(Boolean).join(" ") || null;
+    const conflictNote = [best.conflict_note, dateConflict, researchOnlyDate].filter(Boolean).join(" ") || null;
     const norm = normalizeExemptions(logicSrc.exemption_logic, review);
     rules.push({
       team_rule_id: `r-${sha(k).slice(0, 6)}`,
@@ -190,7 +205,7 @@ export function consolidate(cands: Candidate[]): Rule[] {
       effective_date: best.effective_date ?? dates[0] ?? null,
       citation: best.citation, source_doc_id: best.doc_id, source_url: best.source_url,
       quoted_span: best.quoted_span, confidence: Math.round(best.confidence * 100) / 100,
-      conflict_flag: g.some((c) => c.conflict_with_local) || Boolean(dateConflict), conflict_note: conflictNote,
+      conflict_flag: g.some((c) => c.conflict_with_local) || Boolean(dateConflict) || Boolean(researchOnlyDate), conflict_note: conflictNote,
       logic: {
         status_kind: best.status_kind,
         conditions: logicSrc.conditions.map((x) => ({ any: normalizeAtoms(x.any, review) }))
@@ -201,6 +216,7 @@ export function consolidate(cands: Candidate[]): Rule[] {
           }),
         exemptions: norm.exemptions.map((e) => ({ ...e, all: normalizeAtoms(e.all, review) })),
         yields_to_local: norm.yields || g.some((c) => c.yields_to_local), conflict_with_local: g.some((c) => c.conflict_with_local),
+        ...(researchOnlyDate ? { unverified_effective_date: researchOnlyDate } : {}),
         ...(dates.length > 1 ? { disputed_effective_dates: dates.filter((d) => d !== (best.effective_date ?? dates[0])) } : {}),
       },
       source: { doc_id: best.doc_id, url: best.source_url, retrieved_at: best.retrieved_at, source_type: best.source_type, ...best.span },
@@ -257,7 +273,7 @@ export function loadProperties(): Property[] {
 function main() {
   const args = process.argv.slice(2);
   const asOf = args.includes("--as-of") ? args[args.indexOf("--as-of") + 1] : "2026-10-01";
-  const testsFile = args.includes("--tests") ? args[args.indexOf("--tests") + 1] : path.join(STARTER_DIR, "dev", "change_tests.json");
+  const testsFile = args.includes("--tests") ? args[args.indexOf("--tests") + 1] : null;
   const dry = args.includes("--dry-run");
 
   const cands: Candidate[] = readJson(path.join(DATA_DIR, "extraction", "candidates.json"));
@@ -266,11 +282,17 @@ function main() {
   const evFile = path.join(DATA_DIR, "evidence", "records.json");
   const evidence: EvidenceRecord[] = fs.existsSync(evFile) ? readJson(evFile) : [];
   const rules = applyLegalEvidence(consolidate(cands), evidence).rules;
-  for (const r of rules) r.status = officialStatus(r, asOf);
+  const suppliedCorpus = loadSuppliedCorpus(path.join(STARTER_DIR, "corpus"));
+  for (const r of rules) {
+    r.status = officialStatus(r, asOf);
+    r.source.corpus = verifyCorpusCitation(r, suppliedCorpus);
+  }
   const props = loadProperties();
   const extraTests = fs.existsSync(path.join(DATA_DIR, "extra_change_tests.json")) ? readJson<ChangeTest[]>(path.join(DATA_DIR, "extra_change_tests.json")) : [];
-  const supplied: ChangeTest[] = readJson<ChangeTest[]>(testsFile);
-  const tests: ChangeTest[] = [...supplied, ...extraTests];
+  const supplied = readJson<ChangeTest[]>(path.join(STARTER_DIR, "dev", "change_tests.json"));
+  const requested = testsFile && path.resolve(testsFile) !== path.resolve(STARTER_DIR, "dev", "change_tests.json")
+    ? readJson<ChangeTest[]>(testsFile) : [];
+  const tests = combineChangeTests(supplied, [...requested, ...extraTests]);
   // The official changes.json covers exactly the supplied test cases; extension cases
   // (scripts/ingest.ts) are kept in the snapshot for the website only.
   const officialTestIds = new Set(supplied.map((t) => t.test_id));
@@ -331,21 +353,21 @@ function main() {
     fs.renameSync(tmp, dir);
   }
 
-  // A team-captured copy of a manifest link-only page is cited by that manifest's doc_id
-  // (same URL), so citations resolve against the organizer manifest.
-  const norm = (u: string) => u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+  // The schema asks for a doc_id from corpus_manifest.csv. A team capture (S###) of a
+  // link-only manifest page is exported under that page's manifest id (same URL) and
+  // stays flagged source_in_supplied_corpus: false; eligibility is never inferred from it.
   const manifest = loadManifest();
-  const manifestId = (docId: string, url: string) =>
-    /^S\d/.test(docId) ? manifest.find((m) => /^D\d/.test(m.doc_id) && m.url === url)?.doc_id
-      ?? manifest.find((m) => /^D\d/.test(m.doc_id) && norm(m.url) === norm(url))?.doc_id ?? docId : docId;
+  const manifestId = (docId: string, url: string) => /^S\d/.test(docId)
+    ? manifest.find((m) => /^D\d/.test(m.doc_id) && m.url === url)?.doc_id ?? docId : docId;
   const official = rules.map(({ logic, source, extraction, requirement_es, ...o }) =>
-    ({ ...o, source_doc_id: o.source_doc_id ? manifestId(o.source_doc_id, o.source_url) : o.source_doc_id, source_in_supplied_corpus: inCorpus(source.doc_id) }));
+    ({ ...o, source_doc_id: o.source_doc_id ? manifestId(o.source_doc_id, o.source_url) : o.source_doc_id,
+      source_in_supplied_corpus: source.corpus?.eligible === true }));
   // Every exported answer names its source, retrieval date and as-of date (audit trail).
   const byRule = new Map(rules.map((r) => [r.team_rule_id, r]));
   const sourceLine = (id: string) => {
     const r = byRule.get(id)!;
-    const where = inCorpus(r.source.doc_id) ? r.source.doc_id
-      : `team-captured copy of link-only ${manifestId(r.source.doc_id, r.source.url)}; not supplied corpus text`;
+    const where = r.source.corpus?.eligible ? r.source.doc_id
+      : `team capture ${r.source.doc_id} of link-only ${manifestId(r.source.doc_id, r.source.url)}; ${(r.source.corpus?.reason ?? "supplied text unverified").replace(/\.$/, "")}`;
     return ` Source: ${r.citation} (${where}, retrieved ${(r.source.retrieved_at ?? "unknown").slice(0, 10)}); as of ${asOf}.`;
   };
   writeJson(path.join(SUBMISSION_DIR, "rules.json"), { rules: official });
@@ -373,14 +395,15 @@ function main() {
       corpus_manifest_sha256: sha256File(path.join(STARTER_DIR, "corpus", "corpus_manifest.csv")),
       sample_addresses_sha256: sha256File(path.join(STARTER_DIR, "data", "sample_addresses.csv")),
       change_tests_sha256: sha256File(path.join(STARTER_DIR, "dev", "change_tests.json")),
-      documents: Object.fromEntries(Object.entries(docText).map(([d, t]) => [d, { sha256: sha(t), in_supplied_corpus: inCorpus(d) }])),
+      documents: Object.fromEntries(Object.entries(docText).map(([d, t]) => [d, { sha256: sha(t),
+        in_supplied_corpus: suppliedCorpus.get(d)?.text !== null && suppliedCorpus.get(d)?.sha256 === sha(t) }])),
       geocode_cache_sha256: sha256File(path.join(DATA_DIR, "geocode.json")),
       evidence_records: evidence.length,
     },
     extraction: { prompt_version: PROMPT_VERSION, models: [...new Set(rules.map((r) => r.extraction.model))], candidates: cands.length,
       ledger: Object.fromEntries(Object.entries(ledger.reduce<Record<string, number>>((m, l) => ({ ...m, [l.disposition.split(" ")[0]]: (m[l.disposition.split(" ")[0]] ?? 0) + 1 }), {}))) },
     outputs: {
-      rules: rules.length, rules_outside_supplied_corpus: rules.filter((r) => !inCorpus(r.source.doc_id)).map((r) => r.team_rule_id),
+      rules: rules.length, rules_outside_supplied_corpus: rules.filter((r) => !r.source.corpus?.eligible).map((r) => r.team_rule_id),
       lookup_results: resultsCount,
       changes: Object.fromEntries(changes.filter((c) => officialTestIds.has(c.test_id)).map((c) => [c.test_id, { affected: c.affected.length, conflict_flags: c.conflict_flag_address_ids.length }])),
       extension_cases: changes.filter((c) => !officialTestIds.has(c.test_id)).map((c) => c.test_id),
@@ -401,8 +424,6 @@ function main() {
 }
 
 export const STUB_MARK = "FULL TEXT NOT REDISTRIBUTED";
-// Supplied corpus documents are D###; S### are team-captured supplementary pages.
-export const inCorpus = (docId: string) => /^D\d+$/.test(docId);
 
 // Never exported: engine logic, provenance and the internal Spanish text.
 const INTERNAL_FIELDS = ["logic", "source", "extraction", "requirement_es"];
@@ -418,6 +439,7 @@ const EXTENSION_FIELDS: Record<string, { type: string[] }> = {
 // Publication contracts (exported for tests). Returns problems; empty = publishable.
 export function publishGates(rules: Rule[], props: Property[], cands: Candidate[], ledger: LedgerEntry[], evidence: EvidenceRecord[], asOf: string): string[] {
   const problems: string[] = [];
+  const suppliedCorpus = rules.some((r) => r.source.corpus) ? loadSuppliedCorpus(path.join(STARTER_DIR, "corpus")) : null;
   const schema = readJson<{ required: string[]; properties: Record<string, { enum?: string[]; pattern?: string; minLength?: number; type?: string | string[]; items?: { type: string }; minimum?: number; maximum?: number }> }>(
     path.join(STARTER_DIR, "schema", "rule_record.schema.json"));
   if (!rules.length) problems.push("no rules");
@@ -425,6 +447,8 @@ export function publishGates(rules: Rule[], props: Property[], cands: Candidate[
   if (props.length < 500) problems.push(`only ${props.length} properties`);
   if (new Set(props.map((p) => p.address_id)).size !== props.length) problems.push("duplicate address_id");
   for (const r of rules) {
+    if (suppliedCorpus && r.source.corpus && JSON.stringify(r.source.corpus) !== JSON.stringify(verifyCorpusCitation(r, suppliedCorpus)))
+      problems.push(`${r.team_rule_id}: corpus eligibility metadata does not match supplied text`);
     const o = Object.fromEntries(Object.entries({ ...r, status: officialStatus(r, asOf) }).filter(([k]) => !INTERNAL_FIELDS.includes(k)));
     for (const k of schema.required) if (o[k] === undefined || o[k] === null || o[k] === "") problems.push(`${r.team_rule_id}: missing required ${k}`);
     for (const [k, v] of Object.entries(o)) {

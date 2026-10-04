@@ -10,11 +10,11 @@ export function EvidenceDrawer({ evidence, title }: { evidence: Evidence; title:
   return (
     <>
       <button ref={trigger} type="button" onClick={() => ref.current?.showModal()}
-        className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-line px-3 text-[14px] font-medium text-accent hover:bg-accent-soft">
+        className="inline-flex min-h-10 items-center gap-2 rounded-full border border-line px-4 text-[14px] font-medium text-ink transition-colors hover:border-ink">
         <FileText aria-hidden size={16} /> Source evidence
       </button>
       <dialog ref={ref} aria-label={`Evidence for ${title}`} onClose={() => trigger.current?.focus()}
-        className="m-0 ml-auto h-dvh max-h-dvh w-full max-w-[640px] overflow-y-auto bg-card p-0 text-ink shadow-xl sm:border-l sm:border-line">
+        className="m-0 ml-auto h-dvh max-h-dvh w-full max-w-[640px] animate-slide overflow-y-auto bg-card p-0 text-ink shadow-[0_0_60px_rgba(0,0,0,0.12)] sm:border-l sm:border-line">
         <div className="sticky top-0 flex items-start gap-3 border-b border-line bg-card px-5 py-4">
           <div className="min-w-0">
             <p className="text-[13px] uppercase tracking-wide text-muted">Source evidence</p>
@@ -29,7 +29,7 @@ export function EvidenceDrawer({ evidence, title }: { evidence: Evidence; title:
             <dt className="text-muted">Status</dt><dd>{e.status_kind}</dd>
             <dt className="text-muted">Effective</dt><dd className="font-mono">{e.effective_date ?? "not stated in source"}</dd>
             <dt className="text-muted">Document</dt><dd className="font-mono">{e.doc_id} · {e.source_type}</dd>
-            <dt className="text-muted">Corpus</dt><dd>{e.in_corpus ? "Supplied corpus text" : "Not supplied corpus text: team-captured copy of a link-only page (research only; not a corpus citation)"}</dd>
+            <dt className="text-muted">Corpus</dt><dd>{e.corpus_reason}</dd>
             <dt className="text-muted">Retrieved</dt><dd className="font-mono">{e.retrieved_at ?? "unknown"}</dd>
             <dt className="text-muted">Snapshot</dt><dd className="font-mono">{e.snapshot_id}</dd>
             <dt className="text-muted">Extracted by</dt><dd className="font-mono">{e.model}</dd>

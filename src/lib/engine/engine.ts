@@ -168,7 +168,7 @@ export function evaluateRule(rule: Rule, p: Property, asOf: string, assume?: Ass
 
   const ev: Evaluation = {
     rule_id: rule.team_rule_id, result, jurisdiction, coverage, temporal, conditions, exemptions,
-    missing_facts, presumptions, superseded_by: [], conflict_with: [], conflict_flag: false, explanation: "",
+    missing_facts, presumptions, superseded_by: [], conflict_with: [], conflict_flag: Boolean(rule.logic.unverified_effective_date), explanation: "",
   };
   ev.explanation = explain(rule, ev, p);
   return ev;
@@ -188,7 +188,8 @@ function explain(rule: Rule, ev: Evaluation, p: Property): string {
   if (ev.superseded_by.length) parts.push(`A local rule in the same category governs: ${ev.superseded_by.join(", ")}.`);
   else if (rule.logic.yields_to_local && ev.result === "unknown" && ev.coverage === "true")
     parts.push("Covered, but it yields where a local rule covers this unit, and local coverage is undetermined.");
-  if (ev.conflict_flag) parts.push(`Possible conflict/preemption with ${ev.conflict_with.join(", ")}; flagged for human review.`);
+  if (ev.conflict_with.length) parts.push(`Possible conflict/preemption with ${ev.conflict_with.join(", ")}; flagged for human review.`);
+  if (rule.logic.unverified_effective_date) parts.push(`${rule.logic.unverified_effective_date} Flagged for human review.`);
   return parts.join(" ");
 }
 

@@ -78,7 +78,7 @@ It runs automated extraction on the new text (same prompt, schema and exact-quot
 ## Coverage and limits
 
 - 3 states, 10 cities (Santa Ana extracted only; no sample addresses), 6 categories, 500 sample properties. Not every US address.
-- Year built is not a certificate-of-occupancy date. The first CO is a disclosed *presumption* within the year built (participant guide §4.1), so a cutoff inside that year stays unknown; observed CO evidence takes precedence. `CO_LAG_YEARS` in `src/lib/engine/facts.ts` makes this more conservative.
+- Year built is not a certificate-of-occupancy date. The implementation presumes CO within the build year, so a cutoff inside that year stays unknown; observed CO evidence takes precedence. The guide's cutoff-year warning does not verify that bound. `CO_LAG_YEARS` in `src/lib/engine/facts.ts` makes the assumption more conservative.
 - Owner facts stay missing. Default untestable-exemption and affordability presumptions can still produce unsupported definite answers; strict exemption handling addresses only part of this gap.
 - As-of queries use available legal dates and dated evidence. Complete historical versions, end dates and historical property facts are not established.
 - Hoboken and Jersey City algorithmic-ban text was not in the corpus. One public law-firm alert (manifest D037, same URL) and one news article (manifest D059) were captured once each into `supplementary/`, labelled secondary, and used **only** for the jurisdictions listed in their manifest rows.
@@ -95,7 +95,7 @@ The corpus and manifest were searched (file names, URLs, link-only rows, alterna
 
 Also: the Berkeley ch. 13.63 March 1, 2026 effective date mentioned in the participant guide does not appear in the corpus copy of D001, so the date dispute it describes cannot be detected (reference case C35).
 - The organizers do not share `score.py` or the answer key (v5 participant release). Validation shown here is our own: unit and browser tests, exact-quote and schema gates, T1–T5 outputs and an AI-reviewed reference set (`docs/EVALUATION.md`), which is not an official score.
-- Citations: the metric counts supplied corpus text only. Three rules (Hoboken and Jersey City algorithmic bans, the struck MA ballot question) quote team-captured copies of link-only pages; they are marked `source_in_supplied_corpus: false` and earn no citation credit.
+- Citations: the metric counts supplied corpus text only. Publication checks the distributed manifest, actual text, URL and exact headline offsets and pins eligibility plus the supplied-text hash in the snapshot. Three research rules (team captures S037/S059) are exported under the link-only manifest IDs D037/D059 and marked `source_in_supplied_corpus: false`. Older snapshots without verified metadata show an unverified citation warning. Exact headline support does not prove every compiled field.
 
 ## Project map
 
@@ -103,6 +103,6 @@ See `AGENTS.md` (instructions and invariants), `HANDOFF.md` (status) and `docs/D
 
 ## Verified release and remaining work
 
-Active snapshot `snap-412366cbb46f` contains 53 rules and 500 properties. At 2026-10-01, published and working results both contain 691 unknown rule/address pairs across 339 properties. Current code passes 50 tests, typecheck, full lint, production build and 16 browser journeys. Dataset and citation checks are recorded in [AUDIT.md](docs/AUDIT.md#continuation-verification-current-status).
+The 2026-10-04 v5 review checked 48 rules and all 500 properties: 24,000 pairs, 511 unknown results on 207 properties and zero published-result mismatches. The new pack's 65 files are byte-identical to the earlier participant download. Detailed checks, remaining work and the separately prepared repair are in [V5_CHALLENGE_REVIEW.md](docs/V5_CHALLENGE_REVIEW.md).
 
-The latest local changes strengthen schema validation and reject malformed calendar dates without exceptions. They have not been published into a new snapshot; the active bundle's engine hash describes the prior committed code. Current valid-data results still match all published lookup results. Missing source clauses, unsupported presumptions and independent legal verification remain open.
+The isolated repair passed 55 tests, typecheck, lint, a production Webpack build and 16 browser journeys. Its snapshot is `snap-3e8d479e4ac6`; the reviewed main-checkout baseline was `snap-96c4ceacda7b`. Check the active pointer after integration. Default-bundler verification and a public live deployment remain release steps. Missing source clauses, unsupported presumptions and independent legal verification remain open.

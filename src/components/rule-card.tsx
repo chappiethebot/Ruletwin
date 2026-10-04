@@ -34,13 +34,8 @@ export function RuleCard({ rule, ev, evidence, labels = {} }: { rule: Rule; ev: 
   const res = ev.resolution;
   const conditional = res && (res.method === "conditional" || res.method === "limit_reached" || res.method === "review_required");
   return (
-    <article className="rounded-lg border border-line bg-card p-5" aria-labelledby={`t-${rule.team_rule_id}`}>
-      <div className="flex flex-col gap-2 sm:flex-row sm:items-start">
-        <div className="min-w-0 flex-1">
-          <h3 id={`t-${rule.team_rule_id}`} className="text-[17px] font-semibold leading-snug">{rule.title}</h3>
-          <p className="break-words font-mono text-[13px] text-muted">{rule.citation} · {rule.jurisdiction} · {rule.team_rule_id}</p>
-        </div>
-        <div className="flex flex-wrap gap-2">
+    <article className="rounded-2xl border border-line bg-card p-5 transition-colors duration-300 hover:border-[#d6d6d1] sm:p-6" aria-labelledby={`t-${rule.team_rule_id}`}>
+      <div className="flex flex-wrap items-center gap-2">
           {conditional && res.method === "conditional" ? (
             <span className="inline-flex items-center gap-1.5 rounded-full border border-amber/30 bg-amber-soft px-2.5 py-0.5 text-[13px] font-medium text-amber">
               <GitBranch aria-hidden size={14} /> {res.decisive.length ? `Depends on ${res.decisive.map((d) => labels[d] ?? d).slice(0, 2).join(" + ")}` : "Depends on joint facts"}
@@ -48,22 +43,24 @@ export function RuleCard({ rule, ev, evidence, labels = {} }: { rule: Rule; ev: 
           ) : <StatusBadge result={ev.result} />}
           {ev.conflict_flag && <ConflictBadge />}
           {!evidence.in_corpus && (
-            <span className="inline-flex items-center rounded-full border border-crimson/30 px-2.5 py-0.5 text-[13px] font-medium text-crimson" title="Quoted from a team-captured copy of a link-only page; not supplied corpus text">
+            <span className="inline-flex items-center rounded-full border border-crimson/30 px-2.5 py-0.5 text-[13px] font-medium text-crimson" title={evidence.corpus_reason}>
               Source outside supplied corpus
             </span>
           )}
-          {res?.confidence && (
-            <span title={res.confidence_reasons?.join("; ")}
-              className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[13px] font-medium ${res.confidence === "high" ? "border-ok/30 text-ok" : res.confidence === "medium" ? "border-amber/30 text-amber" : "border-crimson/30 text-crimson"}`}>
-              Confidence: {res.confidence}
-            </span>
-          )}
-        </div>
       </div>
-      <p className="mt-3">{rule.requirement}</p>
-      {rule.key_value && <p className="mt-2 text-[14px]"><span className="text-muted">Key value: </span><strong>{rule.key_value}</strong></p>}
-      {rule.exemptions && <p className="mt-1 text-[14px] text-muted">Exemptions in the law: {rule.exemptions}</p>}
-      <p className="mt-3 rounded-lg bg-bg p-3 text-[14px]">{ev.explanation}</p>
+      <h3 id={`t-${rule.team_rule_id}`} className="mt-3 text-[17px] font-semibold leading-snug">{rule.title}</h3>
+      <p className="mt-1 break-words text-[13px] text-muted">
+        {rule.citation} · {rule.jurisdiction}
+            {res?.confidence && (
+              <span title={res.confidence_reasons?.join("; ")}>
+                {" · "}<span aria-hidden className={`mr-1 inline-block size-1.5 rounded-full align-middle ${res.confidence === "high" ? "bg-ok" : res.confidence === "medium" ? "bg-amber" : "bg-crimson"}`} />
+                {res.confidence} confidence
+              </span>
+            )}
+      </p>
+      <p className="mt-4">{rule.requirement}</p>
+      {rule.key_value && <p className="mt-2 text-[14px]"><span className="text-muted">Key value </span><strong>{rule.key_value}</strong></p>}
+      <p className="mt-3 text-[14px] text-muted">{ev.explanation}</p>
       {res?.method === "constraints" && (
         <p className="mt-2 flex gap-2 text-[14px] text-ok"><ShieldCheck aria-hidden size={16} className="mt-0.5 shrink-0" /><span><strong>Proven despite missing data:</strong> {res.proof}</span></p>
       )}
@@ -101,8 +98,9 @@ export function RuleCard({ rule, ev, evidence, labels = {} }: { rule: Rule; ev: 
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <EvidenceDrawer evidence={evidence} title={rule.title} />
         <details className="min-w-0 flex-1 basis-full sm:basis-auto">
-          <summary className="flex min-h-11 cursor-pointer items-center text-[14px] font-medium text-accent">Show reasoning</summary>
-          <div className="mt-2 flex flex-col gap-3 rounded-lg border border-line p-4">
+          <summary className="flex min-h-11 cursor-pointer items-center text-[14px] font-medium text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink">Show reasoning</summary>
+          <div className="mt-2 flex flex-col gap-3 rounded-2xl bg-bg p-4">
+            {rule.exemptions && <p className="text-[14px] text-muted">Exemptions in the law: {rule.exemptions}</p>}
             <div className="grid grid-cols-[110px_1fr] gap-2 text-[14px]">
               <span className="text-muted">Jurisdiction</span><TruthMark t={ev.jurisdiction} />
               <span className="text-muted">Legal status</span><span className="font-mono text-[13px]">{ev.temporal}</span>

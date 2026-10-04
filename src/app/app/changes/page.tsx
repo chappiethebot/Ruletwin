@@ -24,40 +24,40 @@ export default async function ChangesPage(props: PageProps<"/app/changes">) {
   const propsById = new Map(snap.properties.map((p) => [p.address_id, p]));
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex animate-rise flex-col gap-10">
       <div>
         <h1 className="text-[32px] font-semibold tracking-[-0.03em] sm:text-[40px]">Law changes</h1>
-        <p className="text-muted">Same property facts, two law states. Definite = changes on the supplied facts; possible = depends on facts not in the data.</p>
+        <p className="mt-2 max-w-[62ch] text-[17px] text-muted">The same buildings under two states of the law. Pick a case to see which addresses change.</p>
       </div>
 
-      <div className="flex flex-wrap gap-2" role="tablist" aria-label="Change cases">
+      <div className="flex w-fit gap-1 rounded-full border border-line p-1" role="tablist" aria-label="Change cases">
         {snap.changes.map((c) => (
           <Link key={c.test_id} href={`/app/changes?test=${c.test_id}`} role="tab" aria-selected={!custom && current?.test_id === c.test_id}
-            className={`flex min-h-11 items-center rounded-full border px-4 text-[14px] ${!custom && current?.test_id === c.test_id ? "border-ink bg-ink font-medium text-white" : "border-line bg-card hover:border-ink"}`}>
-            {c.test_id} · {c.title}
+            title={c.title} className={`flex min-h-10 min-w-12 items-center justify-center rounded-full px-4 text-[14px] font-medium transition-colors ${!custom && current?.test_id === c.test_id ? "bg-ink text-white" : "text-muted hover:text-ink"}`}>
+            {c.test_id}
           </Link>
         ))}
       </div>
 
-      <Card>
-        <form method="get" className="flex flex-wrap items-end gap-3">
-          <p className="w-full text-[14px] font-medium">Compare any two dates (all rules, all sample properties)</p>
+      <details className="border-y border-line py-3" open={custom}>
+        <summary className="flex min-h-11 cursor-pointer items-center justify-between text-[15px] font-semibold">Compare any two dates <span aria-hidden className="text-muted">+</span></summary>
+        <form method="get" className="mt-3 flex flex-wrap items-end gap-3">
           <label className="text-[14px]">From<input type="date" name="from" defaultValue={isDate(sp.from) ? sp.from : "2025-12-31"} className={`${input} mt-1 w-[170px] font-mono`} /></label>
           <label className="text-[14px]">To<input type="date" name="to" defaultValue={isDate(sp.to) ? sp.to : "2027-07-02"} className={`${input} mt-1 w-[170px] font-mono`} /></label>
           <button className={btnSecondary}>Compare</button>
         </form>
-      </Card>
+      </details>
 
       {current && (
-        <Card>
-          <h2 className="text-[19px] font-semibold">{current.test_id} · {current.title}</h2>
+        <section>
+          <h2 className="text-[24px] font-semibold">{current.test_id} · {current.title}</h2>
           <p className="mt-1 font-mono text-[13px] text-muted">{current.before_label} → {current.after_label}</p>
-          <div className="mt-3 flex flex-wrap gap-6" role="status">
-            <p><span className="text-[26px] font-semibold">{def}</span> <span className="text-muted">definitely affected</span></p>
-            <p><span className="text-[26px] font-semibold">{current.affected.length - def}</span> <span className="text-muted">possibly affected</span></p>
-            <p><span className="text-[26px] font-semibold">{current.conflict_flag_address_ids.length}</span> <span className="text-muted">conflict-flagged</span></p>
+          <div className="mt-6 grid grid-cols-3 gap-px overflow-hidden rounded-2xl border border-line bg-line" role="status">
+            <p className="flex flex-col bg-white p-4 sm:p-6"><span className="text-[32px] font-semibold leading-none tracking-[-0.03em] sm:text-[44px]">{def}</span> <span className="mt-2 text-[13px] text-muted">definitely affected</span></p>
+            <p className="flex flex-col bg-white p-4 sm:p-6"><span className="text-[32px] font-semibold leading-none tracking-[-0.03em] sm:text-[44px]">{current.affected.length - def}</span> <span className="mt-2 text-[13px] text-muted">possibly affected</span></p>
+            <p className="flex flex-col bg-white p-4 sm:p-6"><span className="text-[32px] font-semibold leading-none tracking-[-0.03em] sm:text-[44px]">{current.conflict_flag_address_ids.length}</span> <span className="mt-2 text-[13px] text-muted">conflict-flagged</span></p>
           </div>
-          <p className="mt-3 text-[14px]">{current.notes}</p>
+          <p className="mt-4 max-w-[75ch] text-[14px] text-muted">{current.notes}</p>
           {current.matched_rule_ids.length > 0 && current.matched_rule_ids.length <= 6 && (
             <ul className="mt-3 flex flex-col gap-1 text-[14px]">
               {current.matched_rule_ids.map((id) => { const r = byRule.get(id)!; return (
@@ -65,11 +65,11 @@ export default async function ChangesPage(props: PageProps<"/app/changes">) {
               ); })}
             </ul>
           )}
-        </Card>
+        </section>
       )}
 
       {current && current.affected.length > 0 && (
-        <div className="overflow-x-auto rounded-lg border border-line bg-card">
+        <div className="overflow-x-auto rounded-2xl border border-line bg-card">
           <table className="w-full min-w-[760px] text-left text-[14px]">
             <caption className="sr-only">Affected sample properties</caption>
             <thead className="border-b border-line bg-bg text-[13px] text-muted">

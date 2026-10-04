@@ -58,8 +58,17 @@ export interface RuleLogic {
   exemptions: Exemption[];
   // Other effective dates asserted by merged sources (disputed legal version).
   disputed_effective_dates?: string[];
+  // Set when the effective date is stated only by a research capture, not supplied text.
+  unverified_effective_date?: string;
   yields_to_local: boolean; // state rule yields where a same-category local rule covers the unit
   conflict_with_local: boolean; // possible preemption/conflict with same-category local rules
+}
+
+export interface CorpusCitation {
+  eligible: boolean;
+  doc_id: string | null;
+  text_sha256: string | null;
+  reason: string;
 }
 
 export interface SourceRef {
@@ -69,6 +78,7 @@ export interface SourceRef {
   source_type: string;
   start: number; // char offsets of quoted_span in the original document text
   end: number;
+  corpus?: CorpusCitation; // pinned at publication; absent in older snapshots
 }
 
 // Official submission fields (schema/rule_record.schema.json) + internal logic.
