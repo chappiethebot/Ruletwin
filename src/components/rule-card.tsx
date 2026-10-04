@@ -7,7 +7,7 @@ import { ConflictBadge, StatusBadge } from "./ui";
 import { EvidenceDrawer } from "./evidence-drawer";
 
 const TRUTH: Record<Truth, { Icon: typeof Check; label: string; cls: string }> = {
-  true: { Icon: Check, label: "true", cls: "text-teal" },
+  true: { Icon: Check, label: "true", cls: "text-ok" },
   false: { Icon: X, label: "false", cls: "text-crimson" },
   unknown: { Icon: CircleHelp, label: "unknown", cls: "text-amber" },
 };
@@ -34,7 +34,7 @@ export function RuleCard({ rule, ev, evidence, labels = {} }: { rule: Rule; ev: 
   const res = ev.resolution;
   const conditional = res && (res.method === "conditional" || res.method === "limit_reached" || res.method === "review_required");
   return (
-    <article className="rounded-xl border border-line bg-card p-5" aria-labelledby={`t-${rule.team_rule_id}`}>
+    <article className="rounded-lg border border-line bg-card p-5" aria-labelledby={`t-${rule.team_rule_id}`}>
       <div className="flex flex-col gap-2 sm:flex-row sm:items-start">
         <div className="min-w-0 flex-1">
           <h3 id={`t-${rule.team_rule_id}`} className="text-[17px] font-semibold leading-snug">{rule.title}</h3>
@@ -54,7 +54,7 @@ export function RuleCard({ rule, ev, evidence, labels = {} }: { rule: Rule; ev: 
           )}
           {res?.confidence && (
             <span title={res.confidence_reasons?.join("; ")}
-              className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[13px] font-medium ${res.confidence === "high" ? "border-teal/30 text-teal" : res.confidence === "medium" ? "border-amber/30 text-amber" : "border-crimson/30 text-crimson"}`}>
+              className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[13px] font-medium ${res.confidence === "high" ? "border-ok/30 text-ok" : res.confidence === "medium" ? "border-amber/30 text-amber" : "border-crimson/30 text-crimson"}`}>
               Confidence: {res.confidence}
             </span>
           )}
@@ -65,7 +65,7 @@ export function RuleCard({ rule, ev, evidence, labels = {} }: { rule: Rule; ev: 
       {rule.exemptions && <p className="mt-1 text-[14px] text-muted">Exemptions in the law: {rule.exemptions}</p>}
       <p className="mt-3 rounded-lg bg-bg p-3 text-[14px]">{ev.explanation}</p>
       {res?.method === "constraints" && (
-        <p className="mt-2 flex gap-2 text-[14px] text-teal"><ShieldCheck aria-hidden size={16} className="mt-0.5 shrink-0" /><span><strong>Proven despite missing data:</strong> {res.proof}</span></p>
+        <p className="mt-2 flex gap-2 text-[14px] text-ok"><ShieldCheck aria-hidden size={16} className="mt-0.5 shrink-0" /><span><strong>Proven despite missing data:</strong> {res.proof}</span></p>
       )}
       {conditional && (
         <div className="mt-3 rounded-lg border border-amber/30 p-3 text-[14px]">
@@ -81,7 +81,7 @@ export function RuleCard({ rule, ev, evidence, labels = {} }: { rule: Rule; ev: 
                   <span className="text-muted">when {b.when.slice(0, 3).map((group) => `(${group.join(" AND ") || "every admissible case"})`).join(" OR ")}</span>
                   {b.when.length > 3 && (
                     <details className="basis-full">
-                      <summary className="flex min-h-11 cursor-pointer items-center font-medium text-teal">Show all {b.when.length} condition combinations</summary>
+                      <summary className="flex min-h-11 cursor-pointer items-center font-medium text-accent">Show all {b.when.length} condition combinations</summary>
                       <ul className="list-disc pl-5 text-muted">{b.when.map((group, i) => <li key={i}>{group.join(" AND ")}</li>)}</ul>
                     </details>
                   )}
@@ -91,7 +91,7 @@ export function RuleCard({ rule, ev, evidence, labels = {} }: { rule: Rule; ev: 
           )}
           {(res.method === "limit_reached" || res.method === "review_required") && <p className="text-amber">{res.proof}</p>}
           {res.next_action && (
-            <p className="mt-2 flex gap-2"><ArrowRight aria-hidden size={16} className="mt-0.5 shrink-0 text-teal" /><span><strong>Next action:</strong> {res.next_action}</span></p>
+            <p className="mt-2 flex gap-2"><ArrowRight aria-hidden size={16} className="mt-0.5 shrink-0 text-accent" /><span><strong>Next action:</strong> {res.next_action}</span></p>
           )}
         </div>
       )}
@@ -101,7 +101,7 @@ export function RuleCard({ rule, ev, evidence, labels = {} }: { rule: Rule; ev: 
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <EvidenceDrawer evidence={evidence} title={rule.title} />
         <details className="min-w-0 flex-1 basis-full sm:basis-auto">
-          <summary className="flex min-h-11 cursor-pointer items-center text-[14px] font-medium text-teal">Show reasoning</summary>
+          <summary className="flex min-h-11 cursor-pointer items-center text-[14px] font-medium text-accent">Show reasoning</summary>
           <div className="mt-2 flex flex-col gap-3 rounded-lg border border-line p-4">
             <div className="grid grid-cols-[110px_1fr] gap-2 text-[14px]">
               <span className="text-muted">Jurisdiction</span><TruthMark t={ev.jurisdiction} />

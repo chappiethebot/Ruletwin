@@ -30,10 +30,10 @@ export function RenterSummary({ evaluations, rules, asOf, lang, labels, switchHr
   const t = T[lang];
   const order = ["applies", "superseded", "unknown", "not_yet_effective", "pending"];
   return (
-    <section aria-labelledby="renter-summary" lang={lang} className="rounded-xl border border-teal/30 bg-card p-5">
+    <section aria-labelledby="renter-summary" lang={lang} className="rounded-lg border border-line border-t-[3px] border-t-ink bg-card p-5 sm:p-6">
       <div className="flex flex-wrap items-center gap-3">
         <h2 id="renter-summary" className="text-[19px] font-semibold">{t.title}</h2>
-        <Link href={switchHref} className="ml-auto flex min-h-11 items-center rounded-lg px-3 text-[14px] font-medium text-teal underline" lang={lang === "en" ? "es" : "en"}>{t.switch}</Link>
+        <Link href={switchHref} className="ml-auto flex min-h-11 items-center rounded-lg px-3 text-[14px] font-medium text-accent underline" lang={lang === "en" ? "es" : "en"}>{t.switch}</Link>
       </div>
       <p className="text-[14px] text-muted">{t.lead} <span className="font-mono">{asOf}</span>.</p>
       <dl className="mt-3 flex flex-col gap-3">

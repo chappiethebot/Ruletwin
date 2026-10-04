@@ -8,7 +8,7 @@ import { NoSnapshot } from "@/components/no-snapshot";
 import { auditRows, evidenceFor, getSnapshot, isDate, resolveFor } from "@/lib/data";
 import { describeFact } from "@/lib/engine/engine";
 import { CATEGORIES, type Field, type Result } from "@/lib/engine/types";
-import { currentUser, getDb } from "@/lib/auth";
+import { HOSTED_DEMO, currentUser, getDb } from "@/lib/auth";
 import { isSaved } from "@/lib/db";
 import { saveReportAction, toggleSaveProperty } from "@/lib/actions";
 
@@ -60,8 +60,8 @@ export default async function PropertyPage(props: PageProps<"/app/properties/[id
     <div className="flex flex-col gap-6">
       <div className="flex flex-wrap items-end gap-4">
         <div className="min-w-[min(100%,22rem)] flex-1">
-          <p className="text-[13px] text-muted"><Link href="/app/check" className="text-teal underline">Check address</Link> / {p.address_id}</p>
-          <h1 className="text-[24px] font-semibold tracking-tight sm:text-[28px]">{p.street_address}, {p.postal_city}, {p.state} {p.zip}</h1>
+          <p className="text-[13px] text-muted"><Link href="/app/check" className="text-accent underline">Check address</Link> / {p.address_id}</p>
+          <h1 className="mt-1 text-[26px] font-semibold leading-tight tracking-[-0.025em] sm:text-[34px]">{p.street_address}, {p.postal_city}, {p.state} {p.zip}</h1>
           <p className="text-muted">
             Jurisdiction: {p.state}{p.county ? ` › ${p.county}` : ""} › {p.city ?? (p.city_candidates ? `one of ${p.city_candidates.join(" / ")}` : "city unresolved")} · as of <span className="font-mono">{asOf}</span>
           </p>
@@ -112,7 +112,7 @@ export default async function PropertyPage(props: PageProps<"/app/properties/[id
                     {items.map((e) => { const rule = byRule.get(e.rule_id)!; return <RuleCard key={e.rule_id} rule={rule} ev={e} evidence={evidenceFor(snap, rule)} labels={labels} />; })}
                   </div>
                 ) : (
-                  <p className="rounded-xl border border-dashed border-line p-4 text-[14px] text-muted">
+                  <p className="rounded-lg border border-dashed border-line p-4 text-[14px] text-muted">
                     No rule in the supplied corpus covers this address in this category on this date. This is not proof that no rule exists.
                   </p>
                 )}
@@ -176,9 +176,9 @@ export default async function PropertyPage(props: PageProps<"/app/properties/[id
                     <p><span className="font-mono">{e.id}</span> · {e.source.adapter} · <strong>{e.status}</strong>{r.evidence.used.includes(e.id) ? " · used" : ""}</p>
                     <p>{e.field}: {e.value === null ? "nothing found" : JSON.stringify(e.value)}</p>
                     {e.reasons.length > 0 && <p className="text-muted">{e.reasons.join("; ")}</p>}
-                    <details><summary className="cursor-pointer text-teal">Exact source span</summary>
+                    <details><summary className="cursor-pointer text-accent">Exact source span</summary>
                       <pre className="mt-1 max-h-40 overflow-auto whitespace-pre-wrap rounded bg-bg p-2 font-mono text-[11px]">{e.source.span}</pre>
-                      <a className="break-all text-teal underline" href={e.source.url} target="_blank" rel="noopener noreferrer">source</a> · retrieved <span className="font-mono">{e.source.retrieved_at.slice(0, 16)}</span>
+                      <a className="break-all text-accent underline" href={e.source.url} target="_blank" rel="noopener noreferrer">source</a> · retrieved <span className="font-mono">{e.source.retrieved_at.slice(0, 16)}</span>
                     </details>
                   </li>
                 ))}
@@ -187,7 +187,7 @@ export default async function PropertyPage(props: PageProps<"/app/properties/[id
             {r.evidence.conflicts.length > 0 && <p className="mt-2 text-[13px] text-crimson">Conflicting sources (field left open): {r.evidence.conflicts.join("; ")}</p>}
           </Card>
 
-          <Card>
+          {!HOSTED_DEMO && <Card>
             <h2 className="mb-3 text-[16px] font-semibold">Save</h2>
             {user ? (
               <div className="flex flex-col gap-2">
@@ -209,10 +209,10 @@ export default async function PropertyPage(props: PageProps<"/app/properties/[id
                 Sign in to save
               </Link>
             )}
-          </Card>
+          </Card>}
         </aside>
       </div>
-      <section aria-labelledby="audit-view" className="rounded-xl border border-line bg-card">
+      <section aria-labelledby="audit-view" className="rounded-lg border border-line bg-card">
         <details>
           <summary className="flex min-h-11 cursor-pointer flex-wrap items-center gap-3 px-5 py-3">
             <h2 id="audit-view" className="text-[17px] font-semibold">Audit view</h2>
@@ -239,7 +239,7 @@ export default async function PropertyPage(props: PageProps<"/app/properties/[id
               </tbody>
             </table>
           </div>
-          <p className="border-t border-line px-5 py-3 text-[13px]"><a className="text-teal underline" href={`/api/audit/${p.address_id}?asOf=${asOf}`}>Download audit trail (JSON)</a> · snapshot <span className="font-mono">{snap.id}</span> · official facts only (no hypothetical answers)</p>
+          <p className="border-t border-line px-5 py-3 text-[13px]"><a className="text-accent underline" href={`/api/audit/${p.address_id}?asOf=${asOf}`}>Download audit trail (JSON)</a> · snapshot <span className="font-mono">{snap.id}</span> · official facts only (no hypothetical answers)</p>
         </details>
       </section>
       <Disclaimer asOf={asOf} snapshot={snap.id} />

@@ -26,14 +26,14 @@ export default async function ChangesPage(props: PageProps<"/app/changes">) {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h1 className="text-[28px] font-semibold tracking-tight">Law changes</h1>
+        <h1 className="text-[32px] font-semibold tracking-[-0.03em] sm:text-[40px]">Law changes</h1>
         <p className="text-muted">Same property facts, two law states. Definite = changes on the supplied facts; possible = depends on facts not in the data.</p>
       </div>
 
       <div className="flex flex-wrap gap-2" role="tablist" aria-label="Change cases">
         {snap.changes.map((c) => (
           <Link key={c.test_id} href={`/app/changes?test=${c.test_id}`} role="tab" aria-selected={!custom && current?.test_id === c.test_id}
-            className={`flex min-h-11 items-center rounded-lg border px-3 text-[14px] ${!custom && current?.test_id === c.test_id ? "border-teal bg-teal-soft font-semibold text-teal" : "border-line bg-card"}`}>
+            className={`flex min-h-11 items-center rounded-full border px-4 text-[14px] ${!custom && current?.test_id === c.test_id ? "border-ink bg-ink font-medium text-white" : "border-line bg-card hover:border-ink"}`}>
             {c.test_id} · {c.title}
           </Link>
         ))}
@@ -61,7 +61,7 @@ export default async function ChangesPage(props: PageProps<"/app/changes">) {
           {current.matched_rule_ids.length > 0 && current.matched_rule_ids.length <= 6 && (
             <ul className="mt-3 flex flex-col gap-1 text-[14px]">
               {current.matched_rule_ids.map((id) => { const r = byRule.get(id)!; return (
-                <li key={id}><span className="font-mono">{id}</span> — {r.title} ({r.citation}; {r.logic.status_kind}{r.effective_date ? `, effective ${r.effective_date}` : ""}) <Link className="text-teal underline" href={`/app/rules?q=${id}`}>evidence</Link></li>
+                <li key={id}><span className="font-mono">{id}</span> — {r.title} ({r.citation}; {r.logic.status_kind}{r.effective_date ? `, effective ${r.effective_date}` : ""}) <Link className="text-accent underline" href={`/app/rules?q=${id}`}>evidence</Link></li>
               ); })}
             </ul>
           )}
@@ -69,7 +69,7 @@ export default async function ChangesPage(props: PageProps<"/app/changes">) {
       )}
 
       {current && current.affected.length > 0 && (
-        <div className="overflow-x-auto rounded-xl border border-line bg-card">
+        <div className="overflow-x-auto rounded-lg border border-line bg-card">
           <table className="w-full min-w-[760px] text-left text-[14px]">
             <caption className="sr-only">Affected sample properties</caption>
             <thead className="border-b border-line bg-bg text-[13px] text-muted">
@@ -83,7 +83,7 @@ export default async function ChangesPage(props: PageProps<"/app/changes">) {
                 )) : <span className="text-muted">—</span>;
                 return (
                   <tr key={a.address_id} className="border-b border-line align-top last:border-0">
-                    <td className="px-4 py-2"><Link className="text-teal underline" href={`/app/properties/${a.address_id}?asOf=${current!.after_label.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? snap.default_as_of}`}>{p.street_address}</Link>
+                    <td className="px-4 py-2"><Link className="text-accent underline" href={`/app/properties/${a.address_id}?asOf=${current!.after_label.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? snap.default_as_of}`}>{p.street_address}</Link>
                       <span className="block text-[12px] text-muted">{p.address_id} · {p.city ?? "city unresolved"}, {p.state}</span></td>
                     <td className="px-4 py-2">{a.kind}</td>
                     <td className="px-4 py-2">{rows(a.before)}</td>
@@ -93,7 +93,7 @@ export default async function ChangesPage(props: PageProps<"/app/changes">) {
               })}
             </tbody>
           </table>
-          {current.affected.length > LIMIT && <p className="px-4 py-3 text-[13px] text-muted">Showing {LIMIT} of {current.affected.length}. Full list in <a className="text-teal underline" href="/api/export/changes.json">changes.json</a>.</p>}
+          {current.affected.length > LIMIT && <p className="px-4 py-3 text-[13px] text-muted">Showing {LIMIT} of {current.affected.length}. Full list in <a className="text-accent underline" href="/api/export/changes.json">changes.json</a>.</p>}
         </div>
       )}
       {current && current.affected.length === 0 && (

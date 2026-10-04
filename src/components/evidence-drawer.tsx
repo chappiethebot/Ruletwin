@@ -10,7 +10,7 @@ export function EvidenceDrawer({ evidence, title }: { evidence: Evidence; title:
   return (
     <>
       <button ref={trigger} type="button" onClick={() => ref.current?.showModal()}
-        className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-line px-3 text-[14px] font-medium text-teal hover:bg-teal-soft">
+        className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-line px-3 text-[14px] font-medium text-accent hover:bg-accent-soft">
         <FileText aria-hidden size={16} /> Source evidence
       </button>
       <dialog ref={ref} aria-label={`Evidence for ${title}`} onClose={() => trigger.current?.focus()}
@@ -35,7 +35,7 @@ export function EvidenceDrawer({ evidence, title }: { evidence: Evidence; title:
             <dt className="text-muted">Extracted by</dt><dd className="font-mono">{e.model}</dd>
           </dl>
           {e.url && (
-            <a href={e.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 break-all text-[14px] text-teal underline">
+            <a href={e.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 break-all text-[14px] text-accent underline">
               <ExternalLink aria-hidden size={14} /> {e.url}
             </a>
           )}

@@ -25,7 +25,7 @@ export default async function RulesPage(props: PageProps<"/app/rules">) {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h1 className="text-[28px] font-semibold tracking-tight">Rule library</h1>
+        <h1 className="text-[32px] font-semibold tracking-[-0.03em] sm:text-[40px]">Rule library</h1>
         <p className="text-muted">Every rule extracted automatically from the corpus, with its exact source text. Status shown as of <span className="font-mono">{asOf}</span>.</p>
       </div>
       <Card>
@@ -43,7 +43,7 @@ export default async function RulesPage(props: PageProps<"/app/rules">) {
       <p role="status" className="text-[14px] text-muted">{rules.length} of {snap.rules.length} rules</p>
       <div className="flex flex-col gap-3">
         {rules.map((r) => (
-          <article key={r.team_rule_id} className="rounded-xl border border-line bg-card p-5">
+          <article key={r.team_rule_id} className="rounded-lg border border-line bg-card p-5">
             <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-start">
               <div className="min-w-0 flex-1">
                 <h2 className="text-[17px] font-semibold">{r.title}</h2>
@@ -61,7 +61,7 @@ export default async function RulesPage(props: PageProps<"/app/rules">) {
             <div className="mt-3 flex flex-wrap items-start gap-3">
               <EvidenceDrawer evidence={evidenceFor(snap, r)} title={r.title} />
               <details className="min-w-0 flex-1">
-                <summary className="flex min-h-11 cursor-pointer items-center text-[14px] font-medium text-teal">Structured record</summary>
+                <summary className="flex min-h-11 cursor-pointer items-center text-[14px] font-medium text-accent">Structured record</summary>
                 <pre className="mt-2 max-h-[360px] overflow-auto rounded-lg border border-line bg-bg p-3 font-mono text-[12px]">{JSON.stringify({ ...r, status: officialStatus(r, asOf) }, null, 2)}</pre>
               </details>
             </div>
@@ -73,7 +73,7 @@ export default async function RulesPage(props: PageProps<"/app/rules">) {
         <p className="mt-1 text-[14px] text-muted">Every corpus entry has a disposition. This measures processing, not legal completeness.</p>
         <p className="mt-2 text-[14px]">{disp("processed")} processed ({disp("processed_no_rules")} with no in-scope rule) · {disp("reference_only")} link-only (no text supplied) · {disp("error")} errors</p>
         <details className="mt-2">
-          <summary className="flex min-h-11 cursor-pointer items-center text-[14px] font-medium text-teal">Document ledger</summary>
+          <summary className="flex min-h-11 cursor-pointer items-center text-[14px] font-medium text-accent">Document ledger</summary>
           <ul className="mt-2 grid gap-1 font-mono text-[12px] sm:grid-cols-2">
             {docs.map((d) => <li key={d.doc_id}>{d.doc_id}: {d.disposition}{d.accepted ? ` · ${d.accepted} accepted` : ""}{d.rejected.length ? ` · ${d.rejected.length} rejected` : ""}{d.error ? ` · ${d.error}` : ""}</li>)}
           </ul>

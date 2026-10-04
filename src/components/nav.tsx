@@ -1,25 +1,23 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bookmark, GitCompareArrows, Library, MapPin } from "lucide-react";
 
 const ITEMS = [
-  { href: "/app/check", label: "Check address", Icon: MapPin },
-  { href: "/app/saved", label: "Saved properties", Icon: Bookmark },
-  { href: "/app/changes", label: "Changes", Icon: GitCompareArrows },
-  { href: "/app/rules", label: "Rule library", Icon: Library },
+  { href: "/app/check", label: "Check address" },
+  { href: "/app/changes", label: "Law changes" },
+  { href: "/app/rules", label: "Rule library" },
+  { href: "/app/saved", label: "Saved", auth: true },
 ];
 
-export function Nav() {
+export function Nav({ signedIn }: { signedIn: boolean }) {
   const path = usePathname();
   return (
-    <nav aria-label="Main" className="flex flex-col gap-1">
-      {ITEMS.map(({ href, label, Icon }) => {
+    <nav aria-label="Main" className="flex gap-6">
+      {ITEMS.filter((i) => !i.auth || signedIn).map(({ href, label }) => {
         const active = path.startsWith(href) || (href === "/app/check" && path.startsWith("/app/properties"));
         return (
           <Link key={href} href={href} aria-current={active ? "page" : undefined}
-            className={`flex min-h-11 items-center gap-3 rounded-lg px-3 text-[15px] ${active ? "bg-teal-soft font-semibold text-teal" : "text-ink hover:bg-bg"}`}>
-            <Icon aria-hidden size={18} />
+            className={`flex min-h-12 shrink-0 items-center border-b-2 text-[14px] md:min-h-14 ${active ? "border-accent font-semibold text-ink" : "border-transparent text-muted hover:text-ink"}`}>
             {label}
           </Link>
         );

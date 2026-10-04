@@ -1,7 +1,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import { evaluateProperty } from "./engine/engine.ts";
+import { describeFact, evaluateProperty } from "./engine/engine.ts";
 import type { ChangeResult } from "./engine/changes.ts";
 import type { Evaluation, Property, Rule } from "./engine/types.ts";
 import { applyPropertyEvidence, isCalendarDate, type EvidenceRecord } from "./engine/evidence.ts";
@@ -142,4 +142,12 @@ export function auditRows(snap: Snapshot, r: NonNullable<ReturnType<typeof resol
       snapshot: snap.id, evidence_used: r.evidence.used,
     };
   });
+}
+
+// Search options for the address picker (landing hero and Check address page).
+export function propertyOptions(snap: Snapshot) {
+  return snap.properties.map((p) => ({
+    id: p.address_id, address: p.street_address, postal: p.postal_city, state: p.state, county: p.county ?? null, city: p.city,
+    facts: `built ${p.facts.year_built?.state === "known" ? p.facts.year_built.lo : "unknown"} · units ${describeFact(p.facts.units).split(" · ")[0]}`,
+  }));
 }

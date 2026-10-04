@@ -23,7 +23,7 @@ export function AuthForm({ next }: { next: string }) {
         {state?.error && <p role="alert" className="rounded-lg bg-crimson-soft p-3 text-[14px] text-crimson">{state.error}</p>}
         <button className={btnPrimary} disabled={pending}>{pending ? "Working…" : mode === "in" ? "Sign in" : "Create account"}</button>
       </form>
-      <button type="button" onClick={() => setMode(mode === "in" ? "up" : "in")} className="min-h-11 text-[14px] text-teal underline">
+      <button type="button" onClick={() => setMode(mode === "in" ? "up" : "in")} className="min-h-11 text-[14px] text-accent underline">
         {mode === "in" ? "No account? Create one" : "Have an account? Sign in"}
       </button>
     </div>
