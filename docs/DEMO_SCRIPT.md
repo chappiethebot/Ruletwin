@@ -1,24 +1,23 @@
-# Video and live-demo script
+# Live demo and video script (v5)
 
-The brief asks for three short videos (team, demo, technical) that include scores, T1–T6 results and the hour-16 ordinance being processed. Use the frozen snapshot; keep each video around 2–3 minutes.
+v5 submission package: `rules.json`, `lookups.json`, `changes.json`, a **live demo** and a **one-page method note** (`docs/METHOD_NOTE.md`). If you record videos, the organizers asked that they show **our own system output and validation**, not `score.py` (it is not shared). There is no hour-16 release; the five change tests T1–T5 are fixed. Use the frozen snapshot shown in the header.
 
-## 1. Team video (≈1 min)
-Who you are, the problem in one sentence ("which rental rules apply at this address today, and what is about to change"), and the one idea that sets RuleTwin apart: **every answer is either proved from cited source text or says exactly which fact would decide it.**
+## Live demo (≈5 min)
+1. **Landing page:** what the tool answers, coverage numbers, "Legal information, not legal advice".
+2. **Address with layered law:** Check address → `3515 FILLMORE ST, San Francisco` (A0016, built 1926), as of 2026-10-01. Jurisdiction stack CA › San Francisco County › San Francisco. "In plain words": the SF Rent Ordinance applies and the AB 1482 state cap yields to it, plus just cause, deposit, fees and algorithmic pricing. Switch to **Ver en español**.
+3. **Every answer traceable:** open **Source evidence** (exact quoted span, URL, retrieval date, snapshot). Show the confidence badge, then open the **Audit view** (source, retrieval date, as-of date, reasoning boundary for every answer) and download its JSON.
+4. **Missing facts handled honestly:** `1609 ADDISON ST, Berkeley` (A0005, no year built). A conditional rule shows the outcome per certificate-of-occupancy date and one decisive question. Answer it: the "Hypothetical" banner appears and results update; the audit view still shows official facts only. Reset.
+5. **Change cases (Changes page):** T1 (CA, 250 addresses not yet effective → applies), T2 (90 Hoboken/Jersey City addresses, none in Newark), T3 (140 NJ addresses, 90 conflict flags with the local bans), T4 (S.2983 and H.5222 pending, hypothetical impact on 110 MA addresses), T5 (struck ballot question: no rent cap, empty set). Then a custom two-date comparison.
+6. **Honesty about sources:** a Hoboken rule card shows "Source outside supplied corpus" (team-captured copy of a link-only page; no citation credit).
 
-## 2. Demo video (≈3 min)
-1. Landing page: coverage numbers, "not legal advice".
-2. Check address → **3515 FILLMORE ST, San Francisco** (A0016, built 1926) on 2026-10-01. Show the "In plain words" summary; switch to **Ver en español**. Point out the brief's illustrative pattern: SF Rent Ordinance applies and the AB 1482 cap yields to it, plus just cause, deposit, fees and algorithmic pricing.
-3. Open **Source evidence** on the SF rule: exact sentence, URL, retrieval date, snapshot. Show the confidence badge.
-4. Berkeley **1609 ADDISON ST** (A0005, no year built): a conditional rule shows the outcome branches by CO date and the precise next action. Answer the CO question; the "Hypothetical" banner appears and results update. Reset.
-5. Changes → **T3**: 140 NJ addresses go "not yet effective → applies" with 90 Hoboken/Jersey City conflict flags; **T5**: empty (struck ballot question never becomes law); **T4**: S.2983 and H.5222 matched individually, pending, hypothetical impact on 110 MA addresses.
-6. Rule library: filter algorithmic rent-setting; show a penalty and the processing ledger.
+## Validation to show (instead of a score)
+- `npm test` → 50/50; `npm run e2e` → 16/16 at 1440 px and 390 px.
+- `npm run publish` → fail-closed gates (official schema, exact quote at recorded offsets, unique ids, evidence re-validation), then the T1–T5 counts above.
+- `submission/audit_log.json`: input hashes (v5 pack), extraction ledger (89 entries, 0 errors), output hashes, rerun commands.
+- `docs/EVALUATION.md`: 37 AI-reviewed reference cases (31/33 definite answers correct, misses explained). Say clearly that it is our own check, not an official score.
 
-## 3. Technical video (≈3 min)
-1. Pipeline: `extract` (LLM structured output → exact-quote verification, rejected otherwise) → `enrich` (official public sources: Census, MassGIS, NJGIN, SDMC; no owner data) → `publish` (fail-closed gates, content-addressed snapshot) → one deterministic engine shared by website and exports.
-2. Three-valued logic plus constraint reasoning: missing facts that cannot change the answer are proved irrelevant; otherwise exact branches and a single decisive question.
-3. Scores: run `python score.py` on the dev set **if the organizers provide it** and show the full report. Otherwise show `npm test` (50/50), `npm run e2e` (16/16), `docs/EVALUATION.md` (labelled as AI-reviewed, not an official score) and the T1–T5 counts.
-4. Hour 16: `node scripts/t6.ts --file <ordinance.txt> --test <t6.json>` live; show the extracted rule, its future effective date and the affected addresses. This is also the "automated extraction" rerun check.
-5. Scalability: a new jurisdiction = add its texts to a manifest folder and run the same commands; no hand-coded rules (README "Hour-16 ordinance" and `supplementary/manifest.csv` format).
+## Optional: automated extraction live
+`node scripts/ingest.ts --file <ordinance.txt> --jurisdiction "City, ST"`: the extractor reads a new text unaided, validates quotes, publishes, and the new case appears under Changes (not in the official `changes.json`).
 
 ## Do not claim
-An official score without `score.py`, 100% legal accuracy, or that T6 passed before running it on the real file.
+An official score, 100% legal accuracy, or that link-only texts are corpus citations.

@@ -5,7 +5,7 @@ import { Card, CATEGORY_LABEL, Disclaimer, StatusBadge, btnPrimary, btnSecondary
 import { RuleCard } from "@/components/rule-card";
 import { RenterSummary } from "@/components/renter-summary";
 import { NoSnapshot } from "@/components/no-snapshot";
-import { evidenceFor, getSnapshot, isDate, resolveFor } from "@/lib/data";
+import { auditRows, evidenceFor, getSnapshot, isDate, resolveFor } from "@/lib/data";
 import { describeFact } from "@/lib/engine/engine";
 import { CATEGORIES, type Field, type Result } from "@/lib/engine/types";
 import { currentUser, getDb } from "@/lib/auth";
@@ -212,6 +212,36 @@ export default async function PropertyPage(props: PageProps<"/app/properties/[id
           </Card>
         </aside>
       </div>
+      <section aria-labelledby="audit-view" className="rounded-xl border border-line bg-card">
+        <details>
+          <summary className="flex min-h-11 cursor-pointer flex-wrap items-center gap-3 px-5 py-3">
+            <h2 id="audit-view" className="text-[17px] font-semibold">Audit view</h2>
+            <span className="text-[13px] text-muted">source, retrieval date, as-of date and reasoning boundary for every answer</span>
+          </summary>
+          <div className="overflow-x-auto border-t border-line">
+            <table className="w-full min-w-[900px] text-left text-[13px]">
+              <caption className="sr-only">Audit trail for each answer</caption>
+              <thead className="bg-bg text-muted">
+                <tr>{["Rule", "Result", "Source", "Retrieved", "As of", "Reasoning boundary", "Confidence"].map((h) => <th key={h} className="px-3 py-2 font-medium">{h}</th>)}</tr>
+              </thead>
+              <tbody>
+                {auditRows(snap, r.answers.length ? resolveFor(snap, id, asOf)! : r, asOf).map((a) => (
+                  <tr key={a.rule_id} className="border-t border-line align-top">
+                    <td className="px-3 py-2"><span className="font-mono">{a.rule_id}</span><span className="block">{a.citation}</span></td>
+                    <td className="px-3 py-2">{a.result}</td>
+                    <td className="px-3 py-2"><span className="font-mono">{a.source_doc_id}</span>{a.in_supplied_corpus ? "" : <span className="block text-crimson">not supplied corpus text</span>}</td>
+                    <td className="px-3 py-2 font-mono">{(a.retrieved_at ?? "unknown").slice(0, 10)}</td>
+                    <td className="px-3 py-2 font-mono">{a.as_of}</td>
+                    <td className="px-3 py-2">{a.reasoning_boundary}{a.presumptions.length ? <span className="block text-muted">presumes: {a.presumptions.join("; ")}</span> : null}</td>
+                    <td className="px-3 py-2">{a.confidence ?? "–"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="border-t border-line px-5 py-3 text-[13px]"><a className="text-teal underline" href={`/api/audit/${p.address_id}?asOf=${asOf}`}>Download audit trail (JSON)</a> · snapshot <span className="font-mono">{snap.id}</span> · official facts only (no hypothetical answers)</p>
+        </details>
+      </section>
       <Disclaimer asOf={asOf} snapshot={snap.id} />
     </div>
   );

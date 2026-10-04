@@ -21,7 +21,8 @@
       "quoted_span": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described \nin subsection A when setting rents or occupancy levels for residential dwelling units in \nthe City of Berkeley.",
       "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-cc1eed",
@@ -44,7 +45,8 @@
       "quoted_span": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-08976a",
@@ -67,7 +69,8 @@
       "quoted_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
       "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-16e87d",
@@ -90,7 +93,8 @@
       "quoted_span": "The 2026 AGA of 1.0% represents 65% of the increase in the Consumer \nPrice Index (CPI) for All Urban Consumers in the Bay Area during the period from July 1, \n2024 - June 30, 2025, which was 1.5% as posted by the Bureau of Labor Statistics.",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-c1c0f0",
@@ -113,7 +117,8 @@
       "quoted_span": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%.",
       "confidence": 0.7,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-78dfdb",
@@ -136,7 +141,8 @@
       "quoted_span": "The Fair Chance Access to Housing Ordinance prohibits rental housing providers in Berkeley from asking about and using criminal history and/or criminal background checks in their rental housing advertising, applications, tenant selection process, or decision-making.",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-bd34aa",
@@ -159,7 +165,8 @@
       "quoted_span": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year.",
       "confidence": 0.6,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-0fcb20",
@@ -182,7 +189,8 @@
       "quoted_span": "Housing providers will consider applicants on \na case-by-case basis.",
       "confidence": 0.7,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-0857c9",
@@ -205,7 +213,8 @@
       "quoted_span": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.",
       "confidence": 0.5,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-2fcd4b",
@@ -228,7 +237,8 @@
       "quoted_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-98c475",
@@ -251,7 +261,8 @@
       "quoted_span": "In no case shall the amount of the application screening fee charged by the landlord or their agent be greater than thirty dollars ($30) per applicant.",
       "confidence": 0.93,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-b3a720",
@@ -280,7 +291,8 @@
       "quoted_span": "Notwithstanding any other law, after a tenant has continuously and lawfully occupied a residential real property for 12 months, the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy.",
       "confidence": 0.9,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-f6181c",
@@ -309,7 +321,8 @@
       "quoted_span": "Subject to subdivision (b), an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, of the lowest gross rental rate charged for that dwelling or unit at any time during the 12 months prior to the effective date of the increase.",
       "confidence": 0.9,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-90b45c",
@@ -332,7 +345,8 @@
       "quoted_span": "For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-29e94d",
@@ -355,7 +369,8 @@
       "quoted_span": "Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy.",
       "confidence": 0.9,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-14fdaa",
@@ -378,7 +393,8 @@
       "quoted_span": "The protected categories under the Cambridge Human Rights Ordinance and the Cambridge Fair Housing Ordinance are the following:",
       "confidence": 0.6,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-2631aa",
@@ -401,7 +417,8 @@
       "quoted_span": "Prohibits landlords from using software, algorithms or data-sharing platforms to coordinate or recommend rents, lease terms, or occupancy.",
       "confidence": 0.75,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": false
     },
     {
       "team_rule_id": "r-8c87fb",
@@ -424,7 +441,8 @@
       "quoted_span": "Prohibits a landlord’s use of algorithmic rent coordination services; includes public and private enforcement; fines up to $2,000 per day.",
       "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": false
     },
     {
       "team_rule_id": "r-3ce528",
@@ -447,7 +465,8 @@
       "quoted_span": "(Please Note: All 1-4 Unit Properties are exempt from rent control)",
       "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-ccc3e6",
@@ -470,7 +489,8 @@
       "quoted_span": "Give the tenant a 30-day and 60-day written notice (some evictions require 120-day notice or up to a 1-year extension).",
       "confidence": 0.75,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-c59240",
@@ -495,7 +515,8 @@
       "quoted_span": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
       "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-79a47d",
@@ -518,7 +539,8 @@
       "quoted_span": "Rent may be increased once every 12 months by the allowable rent increase percentage",
       "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-bd9ba7",
@@ -541,7 +563,8 @@
       "quoted_span": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
       "confidence": 0.6,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-ec514b",
@@ -564,7 +587,8 @@
       "quoted_span": "Senate, March 12, 2026 -- The committee on Housing, to whom was referred the petitions (accompanied by bill, Senate, No. 994) of Cindy F. Friedman and Julian Cyr for legislation to prohibit algorithmic rent setting;",
       "confidence": 0.7,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-4fd1aa",
@@ -587,7 +611,8 @@
       "quoted_span": "At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following:",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-a53f01",
@@ -610,7 +635,8 @@
       "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
       "confidence": 0.9,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-1e1509",
@@ -633,7 +659,8 @@
       "quoted_span": "that the city of Boston be authorized to implement rent stabilization and tenant eviction protections.",
       "confidence": 0.45,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-faf046",
@@ -656,7 +683,8 @@
       "quoted_span": "The state’s Supreme Judicial Court ruled a ballot question seeking to bring rent control back to Massachusetts cannot go forward this November, because it includes a religious exemption.",
       "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": false
     },
     {
       "team_rule_id": "r-a975c9",
@@ -679,7 +707,8 @@
       "quoted_span": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-43044b",
@@ -702,7 +731,8 @@
       "quoted_span": "that the city of Boston be authorized to implement rent stabilization and tenant eviction protections.",
       "confidence": 0.6,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-34a0a6",
@@ -725,7 +755,8 @@
       "quoted_span": "For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-9e0d5c",
@@ -748,7 +779,8 @@
       "quoted_span": "No lessor or successor in interest shall at any time subsequent to the commencement of a tenancy demand rent in advance in excess of the current month's rent or a security deposit in excess of the amount allowed by this section.",
       "confidence": 0.9,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-6e5a6f",
@@ -774,7 +806,8 @@
       "quoted_span": "a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;",
       "confidence": 0.85,
       "conflict_flag": true,
-      "conflict_note": "Section 6(b) bars conflicting municipal ordinances; the document does not resolve how particular local ordinances would be treated."
+      "conflict_note": "Section 6(b) bars conflicting municipal ordinances; the document does not resolve how particular local ordinances would be treated.",
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-75fd18",
@@ -797,7 +830,8 @@
       "quoted_span": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
       "confidence": 0.93,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-bd8a8f",
@@ -820,7 +854,8 @@
       "quoted_span": "No residential landlord may evict or fail to renew a \nlease, whether it is a written or an oral lease without good cause.",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-35ac78",
@@ -843,7 +878,8 @@
       "quoted_span": "The State of New Jersey has no laws that establish, govern or control rents. Municipalities \nmay pass an ordinance establishing rent control or rent leveling.",
       "confidence": 0.75,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-b0e375",
@@ -866,7 +902,8 @@
       "quoted_span": "newly \nconstructed multiple dwellings shall be exempt from any local rent control ordinances for a period \nof 30 years following completion of construction of the building.",
       "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-32ef21",
@@ -889,7 +926,8 @@
       "quoted_span": "prohibits discrimination when selling or renting property and requires \nequal treatment in the sale or rental of housing regardless of race, creed, color, national origin, \nancestry, sex, marital status, civil union status, domestic partnership status, familial status, \naffectional or sexual orientation, gender  identity or expression, mental and physical disability, \nnationality, or source of lawful income.",
       "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-f931e8",
@@ -912,7 +950,8 @@
       "quoted_span": "A housing\nprovider\nshall not make any oral or written inquiry\nregarding an applicant’s criminal record prior to making a conditional offer.",
       "confidence": 0.93,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-f19c8c",
@@ -935,7 +974,8 @@
       "quoted_span": "The maximum-security deposit to be collected by the landlord cannot be more than \none and one-half times one month’s rent ( N.J.S.A. 46:8-21.2 ).",
       "confidence": 0.9,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-a41e33",
@@ -958,7 +998,8 @@
       "quoted_span": "It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
       "confidence": 0.9,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-18e131",
@@ -981,7 +1022,8 @@
       "quoted_span": "A landlord shall not terminate a tenancy without just cause. For purposes of this \nDivision, just cause includes at-fault just cause and no-fault just cause.",
       "confidence": 0.9,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-0f1ffe",
@@ -1004,7 +1046,8 @@
       "quoted_span": "The law prohibits the sale or use of such algorithmic devices and allows a tenant or the City Attorney to bring a civil action if they believe an entity is in violation of the law.",
       "confidence": 0.93,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-5a7da0",
@@ -1027,7 +1070,8 @@
       "quoted_span": "In order to evict a tenant from a rental unit covered by the Rent Ordinance, a landlord must have a \"just cause\" reason that is the dominant motive for pursuing the eviction.",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-63566f",
@@ -1050,7 +1094,8 @@
       "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
       "confidence": 0.85,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-ac9b31",
@@ -1073,7 +1118,8 @@
       "quoted_span": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
       "confidence": 0.7,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-782ecc",
@@ -1096,7 +1142,8 @@
       "quoted_span": "Your landlord must have a valid reason to evict you. This could be for not paying rent, breaking the lease, or if the landlord wants to move into the property themselves.",
       "confidence": 0.75,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     },
     {
       "team_rule_id": "r-34f9d2",
@@ -1119,7 +1166,8 @@
       "quoted_span": "The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.",
       "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": null
+      "conflict_note": null,
+      "source_in_supplied_corpus": true
     }
   ]
 }

@@ -3,10 +3,15 @@ import fs from "node:fs";
 
 export const ROOT = path.resolve(import.meta.dirname, "..");
 loadEnv();
-// Starter pack location: STARTER_DIR env var, else the folder as unzipped from the event Drive.
+// Starter pack location: STARTER_DIR env var, else the current v5 participant pack
+// (falling back to the earlier, byte-identical download).
+const PACKS = [
+  path.join(ROOT, "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16"),
+  path.join(ROOT, "participant-final-no-hour16 3-20261004T014511Z-1-001", "participant-final-no-hour16 3"),
+];
 export const STARTER_DIR = process.env.STARTER_DIR
   ? path.resolve(process.env.STARTER_DIR)
-  : path.join(ROOT, "participant-final-no-hour16 3-20261004T014511Z-1-001", "participant-final-no-hour16 3");
+  : PACKS.find((p) => fs.existsSync(path.join(p, "corpus", "corpus_manifest.csv"))) ?? PACKS[0];
 export const DATA_DIR = path.join(ROOT, "data");
 export const CACHE_DIR = path.join(ROOT, ".cache");
 export const SUBMISSION_DIR = path.join(ROOT, "submission");

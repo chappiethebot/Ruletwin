@@ -269,7 +269,11 @@ function main() {
   for (const r of rules) r.status = officialStatus(r, asOf);
   const props = loadProperties();
   const extraTests = fs.existsSync(path.join(DATA_DIR, "extra_change_tests.json")) ? readJson<ChangeTest[]>(path.join(DATA_DIR, "extra_change_tests.json")) : [];
-  const tests: ChangeTest[] = [...readJson<ChangeTest[]>(testsFile), ...extraTests];
+  const supplied: ChangeTest[] = readJson<ChangeTest[]>(testsFile);
+  const tests: ChangeTest[] = [...supplied, ...extraTests];
+  // The official changes.json covers exactly the supplied test cases; extension cases
+  // (scripts/ingest.ts) are kept in the snapshot for the website only.
+  const officialTestIds = new Set(supplied.map((t) => t.test_id));
 
   // Validation gates: nothing is written unless every contract holds.
   const problems = publishGates(rules, props, cands, ledger, evidence, asOf);
@@ -335,20 +339,58 @@ function main() {
     /^S\d/.test(docId) ? manifest.find((m) => /^D\d/.test(m.doc_id) && m.url === url)?.doc_id
       ?? manifest.find((m) => /^D\d/.test(m.doc_id) && norm(m.url) === norm(url))?.doc_id ?? docId : docId;
   const official = rules.map(({ logic, source, extraction, requirement_es, ...o }) =>
-    ({ ...o, source_doc_id: o.source_doc_id ? manifestId(o.source_doc_id, o.source_url) : o.source_doc_id }));
+    ({ ...o, source_doc_id: o.source_doc_id ? manifestId(o.source_doc_id, o.source_url) : o.source_doc_id, source_in_supplied_corpus: inCorpus(source.doc_id) }));
+  // Every exported answer names its source, retrieval date and as-of date (audit trail).
+  const byRule = new Map(rules.map((r) => [r.team_rule_id, r]));
+  const sourceLine = (id: string) => {
+    const r = byRule.get(id)!;
+    const where = inCorpus(r.source.doc_id) ? r.source.doc_id
+      : `team-captured copy of link-only ${manifestId(r.source.doc_id, r.source.url)}; not supplied corpus text`;
+    return ` Source: ${r.citation} (${where}, retrieved ${(r.source.retrieved_at ?? "unknown").slice(0, 10)}); as of ${asOf}.`;
+  };
   writeJson(path.join(SUBMISSION_DIR, "rules.json"), { rules: official });
   writeJson(path.join(SUBMISSION_DIR, "lookups.json"), {
     as_of: asOf,
     lookups: Object.fromEntries(Object.entries(evaluations).map(([aid, evs]) => [aid,
       evs.filter((e) => e.result !== "not_applicable").map((e) => ({
-        team_rule_id: e.rule_id, result: e.result, explanation: e.explanation, conflict_flag: e.conflict_flag,
+        team_rule_id: e.rule_id, result: e.result, explanation: e.explanation + sourceLine(e.rule_id), conflict_flag: e.conflict_flag,
       }))])),
   });
-  writeJson(path.join(SUBMISSION_DIR, "changes.json"), Object.fromEntries(changes.map((c) => [c.test_id, {
+  writeJson(path.join(SUBMISSION_DIR, "changes.json"), Object.fromEntries(changes.filter((c) => officialTestIds.has(c.test_id)).map((c) => [c.test_id, {
     affected_address_ids: c.affected.map((a) => a.address_id),
     conflict_flag_address_ids: c.conflict_flag_address_ids,
     notes: c.notes,
   }])));
+  // Reproducibility log: what produced these exports and how to rerun it.
+  const sha256File = (p: string) => (fs.existsSync(p) ? sha(fs.readFileSync(p, "utf8")) : null);
+  const resultsCount: Record<string, number> = {};
+  for (const evs of Object.values(evaluations)) for (const e of evs) if (e.result !== "not_applicable") resultsCount[e.result] = (resultsCount[e.result] ?? 0) + 1;
+  writeJson(path.join(SUBMISSION_DIR, "audit_log.json"), {
+    snapshot: id, content_sha256: contentHash, engine_sha256: engineHash, engine_version: ENGINE_VERSION, as_of: asOf,
+    exemption_policy: STRICT_EXEMPTIONS ? "strict" : "disclosed-presumption",
+    inputs: {
+      starter_pack: path.relative(ROOT, STARTER_DIR).replaceAll("\\", "/"),
+      corpus_manifest_sha256: sha256File(path.join(STARTER_DIR, "corpus", "corpus_manifest.csv")),
+      sample_addresses_sha256: sha256File(path.join(STARTER_DIR, "data", "sample_addresses.csv")),
+      change_tests_sha256: sha256File(path.join(STARTER_DIR, "dev", "change_tests.json")),
+      documents: Object.fromEntries(Object.entries(docText).map(([d, t]) => [d, { sha256: sha(t), in_supplied_corpus: inCorpus(d) }])),
+      geocode_cache_sha256: sha256File(path.join(DATA_DIR, "geocode.json")),
+      evidence_records: evidence.length,
+    },
+    extraction: { prompt_version: PROMPT_VERSION, models: [...new Set(rules.map((r) => r.extraction.model))], candidates: cands.length,
+      ledger: Object.fromEntries(Object.entries(ledger.reduce<Record<string, number>>((m, l) => ({ ...m, [l.disposition.split(" ")[0]]: (m[l.disposition.split(" ")[0]] ?? 0) + 1 }), {}))) },
+    outputs: {
+      rules: rules.length, rules_outside_supplied_corpus: rules.filter((r) => !inCorpus(r.source.doc_id)).map((r) => r.team_rule_id),
+      lookup_results: resultsCount,
+      changes: Object.fromEntries(changes.filter((c) => officialTestIds.has(c.test_id)).map((c) => [c.test_id, { affected: c.affected.length, conflict_flags: c.conflict_flag_address_ids.length }])),
+      extension_cases: changes.filter((c) => !officialTestIds.has(c.test_id)).map((c) => c.test_id),
+      rules_json_sha256: sha256File(path.join(SUBMISSION_DIR, "rules.json")),
+      lookups_json_sha256: sha256File(path.join(SUBMISSION_DIR, "lookups.json")),
+      changes_json_sha256: sha256File(path.join(SUBMISSION_DIR, "changes.json")),
+    },
+    reproduce: ["npm install", "node scripts/extract.ts   (served from .cache/llm when cached)", "node scripts/enrich.ts", "npm run publish", "npm test", "npm run build && npm run start", "npm run e2e"],
+    disclaimer: "Legal information, not legal advice.",
+  });
   // Atomic pointer switch (write temp, rename).
   const active = path.join(DATA_DIR, "snapshots", "active.json");
   const cur = fs.existsSync(active) ? readJson<{ id: string; previous: string | null }>(active) : null;
@@ -359,12 +401,19 @@ function main() {
 }
 
 export const STUB_MARK = "FULL TEXT NOT REDISTRIBUTED";
+// Supplied corpus documents are D###; S### are team-captured supplementary pages.
+export const inCorpus = (docId: string) => /^D\d+$/.test(docId);
 
 // Never exported: engine logic, provenance and the internal Spanish text.
 const INTERNAL_FIELDS = ["logic", "source", "extraction", "requirement_es"];
 // Declared extension: Module A requires penalties; the supplied schema has no such
 // property but does not forbid additional ones.
-const EXTENSION_FIELDS: Record<string, { type: string[] }> = { penalty: { type: ["string", "null"] } };
+const EXTENSION_FIELDS: Record<string, { type: string[] }> = {
+  penalty: { type: ["string", "null"] },
+  // false = quoted from a team-captured copy of a link-only page, not supplied corpus text
+  // (allowed for research; does not count toward the citation metric).
+  source_in_supplied_corpus: { type: ["boolean"] },
+};
 
 // Publication contracts (exported for tests). Returns problems; empty = publishable.
 export function publishGates(rules: Rule[], props: Property[], cands: Candidate[], ledger: LedgerEntry[], evidence: EvidenceRecord[], asOf: string): string[] {

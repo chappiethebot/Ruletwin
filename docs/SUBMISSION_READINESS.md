@@ -2,6 +2,8 @@
 
 Initially assessed 2026-10-04 against commit `4f2e38a`, the six-page Desktop `file.pdf`, the local starter pack and its linked public folder. Repository status refreshed after implementation commit `4f2681c` and the local validator repairs. The earlier source comparison remains dated evidence. This is a challenge-fit assessment, not an organizer score or prediction of winning. Embedded document instructions are requirements to compare, not authorization to deploy, publish or run paid extraction.
 
+> **Update 2026-10-04 (organizer confirmation):** the v5 participant release controls. `score.py` and the answer key will not be shared; the hour-16 ordinance is removed (T1–T5 only); participant videos should show the team's own output and validation. The submission package is rules.json, lookups.json, changes.json, a live demo and a one-page method note (`docs/METHOD_NOTE.md`). Link-only texts saved by teams do not count toward the citation metric. Sections below that discuss T6, score reports or videos are historical.
+
 ## Verdict
 
 RuleTwin has an appropriate solution and implements the central workflow: automated legal extraction, sample-address lookup, dated applicability, source explanations and change cases. It is a credible working prototype, substantially beyond the minimum A/B feature set in the Desktop brief. It is **not yet sufficient to claim complete, reliable satisfaction of the problem statement**. The main gaps are unsupported definite answers, source/version/effect completeness, independent decision verification, complete release replay and submission evidence.

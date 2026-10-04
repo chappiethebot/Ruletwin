@@ -32,7 +32,7 @@
     "chunk_hash": "b8bbf8c0b95c5f8d6a2d633510d4371e50b9947722e452e0ed31080c5efc6ecf",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D001.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D001.txt"
   },
   {
     "jurisdiction": "Berkeley, CA",
@@ -90,7 +90,7 @@
     "chunk_hash": "86953b6d53621c07726b469b8b8834a8cf01b130af30756a45e89e3a954c4460",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D003.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D003.txt"
   },
   {
     "jurisdiction": "Berkeley, CA",
@@ -125,7 +125,7 @@
     "chunk_hash": "c4a4eff841a3cb11bad1ce0601d153b58d4929ca127e860be2775579f340323f",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D004.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D004.txt"
   },
   {
     "jurisdiction": "Berkeley, CA",
@@ -160,7 +160,7 @@
     "chunk_hash": "21592f84ca2a0aa63258b789863f25c3302f75fdd018dfb9d3ed901439e34ae7",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D005.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D005.txt"
   },
   {
     "jurisdiction": "CA",
@@ -195,7 +195,7 @@
     "chunk_hash": "21592f84ca2a0aa63258b789863f25c3302f75fdd018dfb9d3ed901439e34ae7",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D005.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D005.txt"
   },
   {
     "jurisdiction": "Berkeley, CA",
@@ -258,7 +258,7 @@
     "chunk_hash": "14a772c8ca1c33ac6275fd700ecad260cd09606478da819618fa557aa6ce8d00",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D006.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D006.txt"
   },
   {
     "jurisdiction": "Berkeley, CA",
@@ -308,7 +308,7 @@
       "unsupported predicate (evaluates unknown): Unit must be fully or partially covered by the Rent Ordinance (not exempt)"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D006.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D006.txt"
   },
   {
     "jurisdiction": "CA",
@@ -343,7 +343,7 @@
     "chunk_hash": "8eb434cc47a3626e36b6875988b4b229abc210586ef568dd937662fc27839831",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D007.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D007.txt"
   },
   {
     "jurisdiction": "Berkeley, CA",
@@ -393,7 +393,7 @@
       "unsupported predicate (evaluates unknown): Unit is fully or partially covered by Berkeley's Rent Ordinance"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D007.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D007.txt"
   },
   {
     "jurisdiction": "Berkeley, CA",
@@ -428,7 +428,7 @@
     "chunk_hash": "8cb91ab47560da5c7e29c26864e64641860028b594d8ac5faeb6b1f7c5f87050",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D008.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D008.txt"
   },
   {
     "jurisdiction": "Berkeley, CA",
@@ -652,7 +652,7 @@
       "unsupported predicate (evaluates unknown): Nonprofit cooperative housing"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D009.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D009.txt"
   },
   {
     "jurisdiction": "Berkeley, CA",
@@ -795,7 +795,7 @@
       "unsupported predicate (evaluates unknown): Nonprofit cooperative housing"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D009.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D009.txt"
   },
   {
     "jurisdiction": "Boston, MA",
@@ -843,7 +843,7 @@
     "chunk_hash": "d2a1b75da2c50130fb1d75fafc2559490510bc9b7e9f59c2e8d34b05c90d32c5",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D010.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D010.txt"
   },
   {
     "jurisdiction": "MA",
@@ -878,7 +878,7 @@
     "chunk_hash": "b86c400313d971127cebee9a820800c60a0db0a6ac890a99e4d7aa3f7db25cb7",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D011.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D011.txt"
   },
   {
     "jurisdiction": "MA",
@@ -913,7 +913,7 @@
     "chunk_hash": "b86c400313d971127cebee9a820800c60a0db0a6ac890a99e4d7aa3f7db25cb7",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D011.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D011.txt"
   },
   {
     "jurisdiction": "Boston, MA",
@@ -948,7 +948,7 @@
     "chunk_hash": "c53a8d753d53fe7d08400a30bf2621a279925b08d7ef41539015b0be35e82234",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D012.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D012.txt"
   },
   {
     "jurisdiction": "CA",
@@ -1008,7 +1008,7 @@
       "unsupported predicate (evaluates unknown): Owner rents to only one additional person"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D016.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D016.txt"
   },
   {
     "jurisdiction": "CA",
@@ -1043,7 +1043,7 @@
     "chunk_hash": "ba7ae4ba6581cd4ac46df6676fe3b421055aaa1785e11248521b3dcf07473c79",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D022.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D022.txt"
   },
   {
     "jurisdiction": "CA",
@@ -1249,7 +1249,7 @@
       "unsupported predicate (evaluates unknown): Tenants were given the required written exemption notice"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D023.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D023.txt"
   },
   {
     "jurisdiction": "CA",
@@ -1413,7 +1413,7 @@
       "unsupported predicate (evaluates unknown): Tenants were given the required written exemption notice"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D024.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D024.txt"
   },
   {
     "jurisdiction": "CA",
@@ -1448,7 +1448,7 @@
     "chunk_hash": "356e0247a18687e7c8397f7e83928648a1b92e1dd7559e8e9c228cafdf21940d",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D025.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D025.txt"
   },
   {
     "jurisdiction": "CA",
@@ -1483,7 +1483,7 @@
     "chunk_hash": "5a880da17ab4dba204bfc479595a371161dd20ac497c44532ff2dee2103129ce",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D026.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D026.txt"
   },
   {
     "jurisdiction": "CA",
@@ -1518,7 +1518,7 @@
     "chunk_hash": "cb86158ca293fde2397b52731064aa48ec57a39e720ef3136a4788f40dc342f7",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D027.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D027.txt"
   },
   {
     "jurisdiction": "Cambridge, MA",
@@ -1576,7 +1576,7 @@
     "chunk_hash": "4f7c5c53aac3076596f61e534d494391bc589157ed8b6a10ece115ba81268fc1",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D029.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D029.txt"
   },
   {
     "jurisdiction": "Jersey City, NJ",
@@ -1626,7 +1626,7 @@
     "chunk_hash": "53b23ae3e486ad9b2f48d02a81605bd9b5ee3e763661c672c2c22210e8d1e161",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D036.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D036.txt"
   },
   {
     "jurisdiction": "Los Angeles, CA",
@@ -1692,7 +1692,7 @@
       "unsupported predicate (evaluates unknown): Unit is regulated by the City's Rent Stabilization Ordinance"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D040.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D040.txt"
   },
   {
     "jurisdiction": "CA",
@@ -1824,7 +1824,7 @@
       "unsupported predicate (evaluates unknown): Landlord notified tenant in writing that tenancy is not subject to just cause and rent increase limits"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D040.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D040.txt"
   },
   {
     "jurisdiction": "Los Angeles, CA",
@@ -1884,7 +1884,7 @@
     "chunk_hash": "30d6f57f83d1a59117e24b2ebb15a35b40e9a677fbc8721168fa17eddb9bf6cc",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D041.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D041.txt"
   },
   {
     "jurisdiction": "Los Angeles, CA",
@@ -1944,7 +1944,7 @@
     "chunk_hash": "30d6f57f83d1a59117e24b2ebb15a35b40e9a677fbc8721168fa17eddb9bf6cc",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D041.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D041.txt"
   },
   {
     "jurisdiction": "Los Angeles, CA",
@@ -1979,7 +1979,7 @@
     "chunk_hash": "4f69b776cad1ca032f3c77927d0b4e4f722bf95e5b8637345c7d18296da73cea",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D042.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D042.txt"
   },
   {
     "jurisdiction": "Los Angeles, CA",
@@ -2014,7 +2014,7 @@
     "chunk_hash": "f69f168be828c4b259adbc1321d17cad7566ac87513ce8c88b0a53d0c95e317b",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D043.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D043.txt"
   },
   {
     "jurisdiction": "MA",
@@ -2049,7 +2049,7 @@
     "chunk_hash": "30a2a93875fab70295271832de487ea44a59988b458cdd3c51f69db916303f37",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D045.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D045.txt"
   },
   {
     "jurisdiction": "MA",
@@ -2084,7 +2084,7 @@
     "chunk_hash": "47e9c3f672ca32bd03061caf38facfa4f52f4c7ff49d63bdb9121ef910e64e39",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D046.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D046.txt"
   },
   {
     "jurisdiction": "MA",
@@ -2119,7 +2119,7 @@
     "chunk_hash": "a93d67916dbcb691d01ad2ce3d0e5d367cc120f61235d47d2ac0d7fb74489e28",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D047.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D047.txt"
   },
   {
     "jurisdiction": "MA",
@@ -2154,7 +2154,7 @@
     "chunk_hash": "daa3963e660e7ff0e54091eb2e4d44ad7394d2ed99ed97465ff56292507a9ba0",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D048.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D048.txt"
   },
   {
     "jurisdiction": "MA",
@@ -2189,7 +2189,7 @@
     "chunk_hash": "ba7cccdc7cb4c2f4369a00dd7280110d556ea1278de0cb1f33adc0ed6300cd77",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D049.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D049.txt"
   },
   {
     "jurisdiction": "MA",
@@ -2241,7 +2241,7 @@
       "unsupported predicate (evaluates unknown): Lease, rental, occupancy or tenancy of 100 days or less in duration for a vacation or recreational purpose"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D052.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D052.txt"
   },
   {
     "jurisdiction": "MA",
@@ -2293,7 +2293,7 @@
       "unsupported predicate (evaluates unknown): Lease, rental, occupancy or tenancy of 100 days or less in duration for a vacation or recreational purpose"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D052.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D052.txt"
   },
   {
     "jurisdiction": "MA",
@@ -2328,7 +2328,7 @@
     "chunk_hash": "9f4b60f366384f55d62c0d646edc262d6473228bc76c9ea4b8b7e5702ae900bb",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D057.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D057.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2386,7 +2386,7 @@
     "chunk_hash": "93db01106f10e08d54c37f110cb63caf6bd359de5570eef563d975e71987c375",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D065.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D065.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2436,7 +2436,7 @@
     "chunk_hash": "0750572aaa57e72c3b49582225720daf0c8cdd541c807a739e974e1f4beaab56",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D066.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D066.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2524,7 +2524,7 @@
       "unsupported predicate (evaluates unknown): Unit is transient or seasonal"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D067.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D067.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2590,7 +2590,7 @@
     "chunk_hash": "98ef11f9a72e7c76bbf4124faf4e640ae167fbd1169f970885fdfb3224269647",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D067.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D067.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2642,7 +2642,7 @@
       "condition quote not verbatim: \"Rents that are subsidized by governmental funding may also b\""
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D067.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D067.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2700,7 +2700,7 @@
     "chunk_hash": "98ef11f9a72e7c76bbf4124faf4e640ae167fbd1169f970885fdfb3224269647",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D067.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D067.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2758,7 +2758,7 @@
     "chunk_hash": "98ef11f9a72e7c76bbf4124faf4e640ae167fbd1169f970885fdfb3224269647",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D067.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D067.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2793,7 +2793,7 @@
     "chunk_hash": "b1d883490627071a55bad85a9c286a2f7c0593dc907edb96d9098ca4420af60b",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D067.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D067.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2865,7 +2865,7 @@
     "chunk_hash": "9a7a8a36f86527cebd0825024fbeae68a33ea766f54d9ca2a78b8fe6f38e8400",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D067.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D067.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2915,7 +2915,7 @@
       "unsupported predicate (evaluates unknown): Building is being converted to condominium, cooperative or fee simple ownership"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D067.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D067.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -2978,7 +2978,7 @@
       "unsupported predicate (evaluates unknown): Building converted or being converted"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D067.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D067.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -3058,7 +3058,7 @@
     "chunk_hash": "7e82569ecd80741f00508b55d70958cf6ac5cd8d55c795b3d0394bff86402bca",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D068.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D068.txt"
   },
   {
     "jurisdiction": "NJ",
@@ -3108,7 +3108,7 @@
     "chunk_hash": "031433f2bf1cb7447f7e8f6e33822f8528341ee0999a276cec4cd403f0dde72d",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D069.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D069.txt"
   },
   {
     "jurisdiction": "San Diego, CA",
@@ -3299,7 +3299,7 @@
       "unsupported predicate (evaluates unknown): Tenants given required written exemption notice"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D073.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D073.txt"
   },
   {
     "jurisdiction": "San Diego, CA",
@@ -3334,7 +3334,7 @@
     "chunk_hash": "9812d6476a7eb93d94d2f0ca8c07f704ea8b0d1124b434a35424527e24736fdd",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D076.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D076.txt"
   },
   {
     "jurisdiction": "San Francisco, CA",
@@ -3384,7 +3384,7 @@
       "unsupported predicate (evaluates unknown): Unit must be covered by the San Francisco Rent Ordinance"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D079.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D079.txt"
   },
   {
     "jurisdiction": "San Francisco, CA",
@@ -3434,7 +3434,7 @@
     "chunk_hash": "5068dcd6333f8e71ef37b3131a68fb9adafacfc03810878017129e2ea1c51a1c",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D079.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D079.txt"
   },
   {
     "jurisdiction": "San Francisco, CA",
@@ -3469,7 +3469,7 @@
     "chunk_hash": "fd665c055767c1c72216bfe9278f845f05a4297ac650842315568344564c2a5c",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D080.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D080.txt"
   },
   {
     "jurisdiction": "San Francisco, CA",
@@ -3504,7 +3504,7 @@
     "chunk_hash": "4add1d8b2d1c3b14343c04002a0b177f14815f93783e0c7a9f9514f775c2c4f1",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D081.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D081.txt"
   },
   {
     "jurisdiction": "San Francisco, CA",
@@ -3539,7 +3539,7 @@
     "chunk_hash": "5b34f33882d60e3939170e0507d904d4225b3b6bc3b461e0312c6ba63d507080",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D082.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D082.txt"
   },
   {
     "jurisdiction": "San Francisco, CA",
@@ -3574,7 +3574,7 @@
     "chunk_hash": "e207e8be0ca39776552c5c072940bd661ae9887744cac9e2a4713312f5412bdf",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D083.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D083.txt"
   },
   {
     "jurisdiction": "San Francisco, CA",
@@ -3609,7 +3609,7 @@
     "chunk_hash": "e207e8be0ca39776552c5c072940bd661ae9887744cac9e2a4713312f5412bdf",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D083.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D083.txt"
   },
   {
     "jurisdiction": "San Francisco, CA",
@@ -3644,7 +3644,7 @@
     "chunk_hash": "e207e8be0ca39776552c5c072940bd661ae9887744cac9e2a4713312f5412bdf",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D083.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D083.txt"
   },
   {
     "jurisdiction": "Santa Ana, CA",
@@ -3679,7 +3679,7 @@
     "chunk_hash": "e895c6076ca97f790b995c19e48bf541edd107d0b5980684bebfc4b1727ea86e",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D084.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D084.txt"
   },
   {
     "jurisdiction": "Santa Ana, CA",
@@ -3714,7 +3714,7 @@
     "chunk_hash": "e895c6076ca97f790b995c19e48bf541edd107d0b5980684bebfc4b1727ea86e",
     "review": [],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D084.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D084.txt"
   },
   {
     "jurisdiction": "Santa Ana, CA",
@@ -3788,7 +3788,7 @@
       "unsupported predicate (evaluates unknown): Date space was first offered for rent is after January 1, 1990"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D085.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D085.txt"
   },
   {
     "jurisdiction": "Santa Ana, CA",
@@ -3910,7 +3910,7 @@
       "unsupported predicate (evaluates unknown): Other shared living quarters"
     ],
     "model": "cli:sonnet",
-    "text_path": "participant-final-no-hour16 3-20261004T014511Z-1-001/participant-final-no-hour16 3/corpus/text/D085.txt"
+    "text_path": "MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/corpus/text/D085.txt"
   },
   {
     "jurisdiction": "San Francisco, CA",

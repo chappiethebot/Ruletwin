@@ -29,6 +29,7 @@ export function EvidenceDrawer({ evidence, title }: { evidence: Evidence; title:
             <dt className="text-muted">Status</dt><dd>{e.status_kind}</dd>
             <dt className="text-muted">Effective</dt><dd className="font-mono">{e.effective_date ?? "not stated in source"}</dd>
             <dt className="text-muted">Document</dt><dd className="font-mono">{e.doc_id} · {e.source_type}</dd>
+            <dt className="text-muted">Corpus</dt><dd>{e.in_corpus ? "Supplied corpus text" : "Not supplied corpus text: team-captured copy of a link-only page (research only; not a corpus citation)"}</dd>
             <dt className="text-muted">Retrieved</dt><dd className="font-mono">{e.retrieved_at ?? "unknown"}</dd>
             <dt className="text-muted">Snapshot</dt><dd className="font-mono">{e.snapshot_id}</dd>
             <dt className="text-muted">Extracted by</dt><dd className="font-mono">{e.model}</dd>

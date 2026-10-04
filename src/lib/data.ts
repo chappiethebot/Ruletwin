@@ -82,6 +82,7 @@ export function resolveFor(snap: Snapshot, propertyId: string, asOf: string, ans
 
 // Evidence for one rule: the quoted span in context plus separate condition quotes.
 export interface Evidence {
+  in_corpus: boolean; // false = team-captured copy of a link-only page (not a corpus citation)
   citation: string;
   url: string | null;
   retrieved_at: string | null;
@@ -105,6 +106,7 @@ export function evidenceFor(snap: Snapshot, rule: Rule): Evidence {
   const url = /^https?:\/\//i.test(rule.source_url) ? rule.source_url : null;
   return {
     citation: rule.citation, url, retrieved_at: rule.source.retrieved_at, source_type: rule.source.source_type,
+    in_corpus: /^D\d+$/.test(rule.source.doc_id),
     doc_id: rule.source.doc_id, effective_date: rule.effective_date, status_kind: rule.logic.status_kind,
     snapshot_id: snap.id,
     before: ok ? text.slice(Math.max(0, start - 500), start) : "",
@@ -117,4 +119,27 @@ export function evidenceFor(snap: Snapshot, rule: Rule): Evidence {
     review: rule.extraction.review,
     model: rule.extraction.model,
   };
+}
+
+// Audit view: one row per reported answer with its source, retrieval date, as-of date
+// and reasoning boundary (how it was decided and what it rests on).
+export function auditRows(snap: Snapshot, r: NonNullable<ReturnType<typeof resolveFor>>, asOf: string) {
+  const byRule = new Map(snap.rules.map((x) => [x.team_rule_id, x]));
+  const labels = Object.fromEntries(r.resolution.blocking.map((b) => [b.id, b.label]));
+  return r.resolution.evaluations.filter((e) => e.result !== "not_applicable").map((e) => {
+    const rule = byRule.get(e.rule_id)!;
+    const res = e.resolution;
+    const boundary = res.method === "data" ? "decided by supplied facts"
+      : res.method === "constraints" ? "proved across all admissible values of missing facts"
+      : res.method === "conditional" ? `open: depends on ${res.decisive.map((d) => labels[d] ?? d).join(", ") || "joint facts"}`
+      : res.method === "limit_reached" ? "not checked exhaustively (computation limit)" : "needs human review";
+    return {
+      rule_id: e.rule_id, title: rule.title, citation: rule.citation, result: e.result, as_of: asOf,
+      source_doc_id: rule.source.doc_id, in_supplied_corpus: /^D\d+$/.test(rule.source.doc_id),
+      source_url: rule.source_url, retrieved_at: rule.source.retrieved_at, quoted_span: rule.quoted_span,
+      reasoning_boundary: boundary, presumptions: e.presumptions, conflict_flag: e.conflict_flag,
+      confidence: res.confidence ?? null, extracted_by: `${rule.extraction.model} · ${rule.extraction.prompt_version}`,
+      snapshot: snap.id, evidence_used: r.evidence.used,
+    };
+  });
 }

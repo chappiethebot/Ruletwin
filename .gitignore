@@ -25,3 +25,8 @@ npm-debug.log*
 # misc
 .DS_Store
 .vercel
+
+# v5 participant pack and local copies of it (event-distributed data)
+/MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16/
+/corpus/
+/submission_templates/

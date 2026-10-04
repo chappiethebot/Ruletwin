@@ -14,9 +14,9 @@
     "extract": "node scripts/extract.ts",
     "publish": "node scripts/publish.ts",
     "e2e": "node scripts/e2e.ts",
-    "t6": "node scripts/t6.ts",
     "enrich": "node scripts/enrich.ts",
-    "measure": "node scripts/measure.ts"
+    "measure": "node scripts/measure.ts",
+    "ingest": "node scripts/ingest.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",

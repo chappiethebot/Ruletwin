@@ -11,7 +11,7 @@ Built for Hack-Nation × RealPage, Challenge 02. Runs locally on your computer.
 2. **Resolve**: each sample address is geocoded with the US Census Geocoder to its legal incorporated place. The postal city is not trusted: one "Cambridge" address is legally in Boston.
 3. **Apply**: a deterministic evaluator (`src/lib/engine`) tests coverage with true/false/unknown logic, effective dates, pending/failed status and local-vs-state precedence.
 4. **Explain**: the website shows each rule with its status, the exact source sentence, the reasoning trace and the facts that would decide an "unknown".
-5. **Track change**: supplied cases T1–T5 plus dated comparisons, split into definitely and possibly affected addresses. An additional-document pathway supports T6 if supplied and required.
+5. **Track change**: supplied cases T1–T5 plus dated comparisons, split into definitely and possibly affected addresses. Extension cases for new ordinances use the same pipeline (see below).
 
 ## Setup (Windows, PowerShell)
 
@@ -24,8 +24,7 @@ cd C:\Users\ritay\Desktop\Ruletwin
 npm install
 ```
 
-Put the starter pack folder from the event Drive next to this README. It's expected at
-`participant-final-no-hour16 3-20261004T014511Z-1-001\participant-final-no-hour16 3`.
+Put the v5 participant pack folder `MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16` next to this README (the earlier, byte-identical `participant-final-no-hour16 3…` download is also detected).
 If it lives somewhere else, set `STARTER_DIR` in `.env.local`.
 
 ## Run the website
@@ -62,17 +61,15 @@ Outputs: `submission/rules.json`, `submission/lookups.json`, `submission/changes
 
 Every property report starts with an "In plain words" summary for renters; **Ver en español** switches it to Spanish (`?lang=es`). Each rule card shows a confidence level derived from the evidence path (high = observed facts and an official source; medium = presumption, constraint proof, secondary source or modest extraction confidence; low = open or disputed), with the reasons on hover.
 
-## Hour-16 ordinance (T6): one command
+## Extending to a new jurisdiction or ordinance (stretch goal)
 
-Save the released ordinance text as a `.txt` file and run (PowerShell, repo root):
+The v5 brief has no hour-16 release; the five change tests T1–T5 are fixed at kickoff. The same pipeline can still take one new ordinance or jurisdiction with a single command (PowerShell, repo root):
 
 ```powershell
-node scripts/t6.ts --file C:path	oordinance.txt --jurisdiction "Cambridge, MA" --url "<official URL>"
-# if the organizers also release a T6 test JSON:
-node scripts/t6.ts --file C:path	oordinance.txt --test C:path	o	6_test.json
+node scripts/ingest.ts --file C:\path\to\ordinance.txt --jurisdiction "City, ST" --url "<official URL>"
 ```
 
-It runs automated extraction on the new text (same prompt, schema and quote validation), builds the T6 change case (the organizer's JSON if given, otherwise "2026-10-01 vs the day after the new rule's effective date"), publishes through the normal gates and prints the affected addresses. Then restart the site (`npm run build; npm run start`). The same command is the live "automated extraction" rerun for the demo.
+It runs automated extraction on the new text (same prompt, schema and exact-quote validation), builds an extension change case ("2026-10-01 vs the day after the new rule's effective date", or a supplied test JSON via `--test`), and publishes through the normal gates. Extension cases appear on the website's Changes page only; the official `submission/changes.json` always contains exactly T1–T5. This is also the live "automated extraction" demonstration.
 
 ## Hosted read-only demo (live link)
 
@@ -97,7 +94,8 @@ The corpus and manifest were searched (file names, URLs, link-only rows, alterna
 | Newark rent control | Only link-only ecode360 rows D070–D072. |
 
 Also: the Berkeley ch. 13.63 March 1, 2026 effective date mentioned in the participant guide does not appear in the corpus copy of D001, so the date dispute it describes cannot be detected (reference case C35).
-- The provided starter pack had no `score.py` and no dev answer key, so no official score has been computed.
+- The organizers do not share `score.py` or the answer key (v5 participant release). Validation shown here is our own: unit and browser tests, exact-quote and schema gates, T1–T5 outputs and an AI-reviewed reference set (`docs/EVALUATION.md`), which is not an official score.
+- Citations: the metric counts supplied corpus text only. Three rules (Hoboken and Jersey City algorithmic bans, the struck MA ballot question) quote team-captured copies of link-only pages; they are marked `source_in_supplied_corpus: false` and earn no citation credit.
 
 ## Project map
 

@@ -1,5 +1,7 @@
 # HANDOFF
 
+**v5 update (2026-10-04):** v5 participant pack (`MIT-hackathon-PARTICIPANT-PACK-CLEAN-NO-HOUR16`, byte-identical data) is the default input. Submission = rules.json, lookups.json, changes.json (T1–T5 only), live demo, one-page `docs/METHOD_NOTE.md`. Every lookup explanation ends with citation, source doc, retrieval date and as-of; rules carry `source_in_supplied_corpus` (false for r-2631aa, r-8c87fb, r-faf046: link-only copies, no citation credit). New: audit view + `/api/audit/<id>`, `submission/audit_log.json`.
+
 Current state: v4 extraction published and released publicly. Active snapshot `snap-96c4ceacda7b`. Local `main` holds full history and full supplementary texts; the public GitHub repo holds one clean commit (see "Public repository").
 
 ## Verified (2026-10-04)
@@ -10,11 +12,11 @@ Current state: v4 extraction published and released publicly. Active snapshot `s
 - Reference set (37 cases, AI-reviewed, not independent): 31/33 definite answers correct; misses C35 (Berkeley March 2026 date absent from corpus) and C37 (NJ 30-year statute modeled as an exemption: modeling judgment). C32 has no separate rule after v4 merged LA Resident Protections into the RSO just-cause record. Not an accuracy claim.
 
 ## What changed in this pass
-Prompt v4 (penalty, Spanish, key values, strict just-cause definition, per-category records, exact cutoff dates); named-ordinance keys + subset merging; supplementary pages limited to their manifest jurisdictions (Santa Ana NS-3090 and S037-based San Diego dropped per user instruction; San Diego enacted via official SDMC evidence); typed predicates for statutory property-type phrasing; self-referential conditions removed; resolver enumerates only undecided groups (0 enumeration limits); CO presumption = year built (participant guide §4.1); renter view EN/ES; per-answer confidence; county in jurisdiction stack; `scripts/t6.ts`; `HOSTED_DEMO`; publication gates accept redistribution stubs.
+Prompt v4 (penalty, Spanish, key values, strict just-cause definition, per-category records, exact cutoff dates); named-ordinance keys + subset merging; supplementary pages limited to their manifest jurisdictions (Santa Ana NS-3090 and S037-based San Diego dropped per user instruction; San Diego enacted via official SDMC evidence); typed predicates for statutory property-type phrasing; self-referential conditions removed; resolver enumerates only undecided groups (0 enumeration limits); CO presumption = year built (participant guide §4.1); renter view EN/ES; per-answer confidence; county in jurisdiction stack; `scripts/ingest.ts` (extension cases); `HOSTED_DEMO`; publication gates accept redistribution stubs.
 
 ## Commands
 `npm run geocode` → `node scripts/extract.ts` (Claude CLI login or `ANTHROPIC_API_KEY`) → `node scripts/enrich.ts` (Python + `pypdf`) → `npm run publish` → `node scripts/measure.ts` → `npm run build; npm run start` → `npm run e2e`.
-T6: `node scripts/t6.ts --file <txt> [--test <t6.json>] [--url <url>]`.
+Extension (stretch goal, not part of T1–T5): `node scripts/ingest.ts --file <txt> --jurisdiction "City, ST"`.
 
 ## Public repository (github.com/chappiethebot/Ruletwin, public)
 Remote `main` = orphan branch `public-release` (one commit, author `42741718+chappiethebot@users.noreply.github.com`). Article texts S037/S059 are stubs (`scripts/public-stubs.ts`); only the active snapshot is included. To update it later:
@@ -29,8 +31,8 @@ git checkout main
 
 ## Open / external
 - Live link: deploy the public repo on Vercel with env `HOSTED_DEMO=1` (user account needed).
-- Videos (team, demo, technical): see `docs/DEMO_SCRIPT.md`.
-- No `score.py` / dev key in the pack: ask organizers; then `python score.py ...` on the dev set for the video.
+- Live demo / optional videos: `docs/DEMO_SCRIPT.md` (own output and validation only).
+- Organizers will not share `score.py` or the answer key (v5); no official score exists. T6 removed in v5.
 - Known gaps (README): Santa Ana NS-3090, Hoboken rent control, Newark rent control have no corpus text.
 - Audit open items: F16, F18–F24 (docs/AUDIT.md).
 

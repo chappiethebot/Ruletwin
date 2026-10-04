@@ -47,6 +47,11 @@ export function RuleCard({ rule, ev, evidence, labels = {} }: { rule: Rule; ev: 
             </span>
           ) : <StatusBadge result={ev.result} />}
           {ev.conflict_flag && <ConflictBadge />}
+          {!evidence.in_corpus && (
+            <span className="inline-flex items-center rounded-full border border-crimson/30 px-2.5 py-0.5 text-[13px] font-medium text-crimson" title="Quoted from a team-captured copy of a link-only page; not supplied corpus text">
+              Source outside supplied corpus
+            </span>
+          )}
           {res?.confidence && (
             <span title={res.confidence_reasons?.join("; ")}
               className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[13px] font-medium ${res.confidence === "high" ? "border-teal/30 text-teal" : res.confidence === "medium" ? "border-amber/30 text-amber" : "border-crimson/30 text-crimson"}`}>
