@@ -1,0 +1,43 @@
+{
+  "name": "ruletwin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "node --test \"src/**/*.test.ts\" \"scripts/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "geocode": "node scripts/geocode.ts",
+    "extract": "node scripts/extract.ts",
+    "publish": "node scripts/publish.ts",
+    "e2e": "node scripts/e2e.ts",
+    "t6": "node scripts/t6.ts",
+    "enrich": "node scripts/enrich.ts",
+    "measure": "node scripts/measure.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "lucide-react": "^1.51.0",
+    "next": "16.3.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24.19.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

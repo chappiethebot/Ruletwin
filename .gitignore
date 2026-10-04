@@ -1,0 +1,27 @@
+# dependencies / build
+/node_modules
+/.next/
+/build
+/coverage
+*.tsbuildinfo
+next-env.d.ts
+
+# secrets: never commit. .env.example is the only tracked env file.
+.env*
+!.env.example
+*.pem
+
+# raw starter pack (event-distributed; path documented in README) and local reference PDFs
+/participant-final-*/
+/starter/
+*.pdf
+
+# LLM response cache, local DB, logs (may contain personal data / model output)
+/.cache/
+/data/local/
+*.log
+npm-debug.log*
+
+# misc
+.DS_Store
+.vercel

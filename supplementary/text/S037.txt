@@ -1,0 +1,19 @@
+SOURCE: https://www.morganlewis.com/pubs/2026/08/algorithmic-rent-pricing-litigation-expands-under-new-state-and-local-laws
+RETRIEVED: 2026-10-04 UTC
+NOTE: Secondary source (law-firm alert). Supplementary capture by RuleTwin team; manifest lists D002/D037 as link-only.
+
+FULL TEXT NOT REDISTRIBUTED: third-party page (copyright). Read it at the SOURCE URL above.
+Exact spans quoted by RuleTwin rules:
+
+---
+The ordinance prohibits landlords from using qualifying algorithmic devices that calculate nonpublic competitor information to advise on rent or occupancy.
+---
+San Diego similarly authorizes tenant suits for damages, injunctive relief and penalties of up to $1,000 per violation, with each month and affected rental property potentially constituting a separate violation.
+---
+Prohibits coordinated pricing algorithms; recurring unit/month violations and private remedies, previously at issue in RealPage, Inc. v. City of Berkeley et al., (N.D. Cal.) (voluntarily dismissed with prejudice Jan. 14, 2026).
+---
+Ordinance NS-3090 prohibits specified anticompetitive automated rent price-fixing; private tenant claims and up to $1,000 per violation and per month.
+---
+Prohibits a landlord’s use of algorithmic rent coordination services; includes public and private enforcement; fines up to $2,000 per day.
+---
+Prohibits landlords from using software, algorithms or data-sharing platforms to coordinate or recommend rents, lease terms, or occupancy.

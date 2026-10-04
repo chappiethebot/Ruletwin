@@ -1,0 +1,9 @@
+SOURCE: https://www.wbur.org/news/2026/06/23/massachusetts-high-court-rent-control-ballot-question-struck
+RETRIEVED: 2026-10-04 UTC
+NOTE: Secondary source (news). Supplementary capture by RuleTwin team; manifest lists D059 as link-only.
+
+FULL TEXT NOT REDISTRIBUTED: third-party page (copyright). Read it at the SOURCE URL above.
+Exact spans quoted by RuleTwin rules:
+
+---
+The state’s Supreme Judicial Court ruled a ballot question seeking to bring rent control back to Massachusetts cannot go forward this November, because it includes a religious exemption.

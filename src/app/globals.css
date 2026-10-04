@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f7f6f2;
+  --color-card: #ffffff;
+  --color-ink: #242621;
+  --color-muted: #5b605b; /* darker than #626762 for AA on ivory */
+  --color-line: #e3e1da;
+  --color-teal: #006b67;
+  --color-teal-soft: #e3f0ef;
+  --color-amber: #8a5a00;
+  --color-amber-soft: #fbf1dc;
+  --color-crimson: #a3232f;
+  --color-crimson-soft: #fbe7e9;
+  --color-slate-soft: #eceef0;
+  --color-violet: #5b3f8c;
+  --color-violet-soft: #efe9f8;
+  --font-sans: ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", Consolas, monospace;
+}
+
+html { background: var(--color-bg); color: var(--color-ink); }
+body { font-family: var(--font-sans); font-size: 15px; line-height: 1.55; }
+:focus-visible { outline: 2px solid var(--color-teal); outline-offset: 2px; border-radius: 4px; }
+dialog::backdrop { background: rgb(36 38 33 / 0.45); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

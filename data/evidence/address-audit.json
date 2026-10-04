@@ -1,0 +1,216 @@
+[
+  {
+    "address_id": "A0009",
+    "address": "322-322.5 Western Ave, Cambridge, MA ",
+    "original": "Census Geocoder match rejected: matched \"5 WESTERN AVE, CAMBRIDGE, MA, 02163\" does not carry house number of \"322-322.5 Western Ave\"",
+    "evidence": [
+      {
+        "id": "ev-d776f601d5",
+        "adapter": "municipal-assessor-roll",
+        "value": "Cambridge",
+        "status": "validated",
+        "reasons": [],
+        "span": "A0009,322-322.5 Western Ave,Cambridge,MA,,Cambridge Property Database FY2026 (waa7-ibdu),2026-10-01T22:50Z"
+      }
+    ],
+    "outcome": "resolved: Cambridge",
+    "city_evidence": "municipal-assessor-roll: 322-322.5 Western Ave (ev-d776f601d5)",
+    "unknown_before": 2,
+    "unknown_after": 0,
+    "shared_conclusions": 10,
+    "request": null
+  },
+  {
+    "address_id": "A0098",
+    "address": "WILLOWWOOD ST, Dorchester, MA 02124",
+    "original": "Census Geocoder found no match (address lacks a house number or is ambiguous); postal city is not proof of legal city",
+    "evidence": [
+      {
+        "id": "ev-e601b790a1",
+        "adapter": "municipal-assessor-roll",
+        "value": "Boston",
+        "status": "validated",
+        "reasons": [],
+        "span": "A0098,WILLOWWOOD ST,Dorchester,MA,02124,Boston Property Assessment FY2026,2026-10-01T22:50Z"
+      }
+    ],
+    "outcome": "resolved: Boston",
+    "city_evidence": "municipal-assessor-roll: WILLOWWOOD ST (ev-e601b790a1)",
+    "unknown_before": 3,
+    "unknown_after": 0,
+    "shared_conclusions": 11,
+    "request": null
+  },
+  {
+    "address_id": "A0128",
+    "address": "Harvard ST, Dorchester, MA 02124",
+    "original": "Census Geocoder found no match (address lacks a house number or is ambiguous); postal city is not proof of legal city",
+    "evidence": [
+      {
+        "id": "ev-4b889f9fd4",
+        "adapter": "municipal-assessor-roll",
+        "value": "Boston",
+        "status": "validated",
+        "reasons": [],
+        "span": "A0128,Harvard ST,Dorchester,MA,02124,Boston Property Assessment FY2026,2026-10-01T22:50Z"
+      }
+    ],
+    "outcome": "resolved: Boston",
+    "city_evidence": "municipal-assessor-roll: Harvard ST (ev-4b889f9fd4)",
+    "unknown_before": 3,
+    "unknown_after": 0,
+    "shared_conclusions": 11,
+    "request": null
+  },
+  {
+    "address_id": "A0168",
+    "address": "600 JACKSON/601 HARRISON, Hoboken, NJ 07030",
+    "original": "Census Geocoder found no match (address lacks a house number or is ambiguous); postal city is not proof of legal city",
+    "evidence": [
+      {
+        "id": "ev-e9566cb68f",
+        "adapter": "census-zcta-place-2020",
+        "value": [
+          "Hoboken",
+          "Jersey City"
+        ],
+        "status": "validated",
+        "reasons": [
+          "land area share: Hoboken 99.24%, Jersey City 0.76%"
+        ],
+        "span": "07030|Hoboken city|AREALAND_PART=3211050|AREALAND_ZCTA5_20=3235718\n07030|Jersey City city|AREALAND_PART=24668|AREALAND_ZCTA5_20=3235718"
+      },
+      {
+        "id": "ev-d557c7ba85",
+        "adapter": "njgin-geocoder+nj-municipal-boundaries",
+        "value": "Hoboken",
+        "status": "validated",
+        "reasons": [],
+        "span": "geocode: {\"Match_addr\":\"600 Jackson Street, Hoboken, New Jersey, 07030\",\"Addr_type\":\"PointAddress\",\"score\":100,\"x\":-74.039256000001,\"y\":40.745907000003}\nmunicipality: [{\"MUN\":\"HOBOKEN CITY\",\"MUN_TYPE\":\"City\",\"NAME\":\"Hoboken\",\"COUNTY\":\"HUDSON\"}]"
+      },
+      {
+        "id": "ev-5a2c436dd1",
+        "adapter": "njgin-geocoder+nj-municipal-boundaries",
+        "value": "Hoboken",
+        "status": "validated",
+        "reasons": [],
+        "span": "geocode: {\"Match_addr\":\"601 Harrison Street, Hoboken, New Jersey, 07030\",\"Addr_type\":\"PointAddress\",\"score\":100,\"x\":-74.039643000001,\"y\":40.746168000003}\nmunicipality: [{\"MUN\":\"HOBOKEN CITY\",\"MUN_TYPE\":\"City\",\"NAME\":\"Hoboken\",\"COUNTY\":\"HUDSON\"}]"
+      }
+    ],
+    "outcome": "resolved: Hoboken",
+    "city_evidence": "njgin-geocoder+nj-municipal-boundaries: 600 Jackson Street, Hoboken, New Jersey, 07030 (ev-d557c7ba85)",
+    "unknown_before": 3,
+    "unknown_after": 0,
+    "shared_conclusions": 8,
+    "request": null
+  },
+  {
+    "address_id": "A0295",
+    "address": "Harvard ST LOT 2A-13, Dorchester, MA 02124",
+    "original": "Census Geocoder found no match (address lacks a house number or is ambiguous); postal city is not proof of legal city",
+    "evidence": [
+      {
+        "id": "ev-749e064dda",
+        "adapter": "municipal-assessor-roll",
+        "value": "Boston",
+        "status": "validated",
+        "reasons": [],
+        "span": "A0295,Harvard ST LOT 2A-13,Dorchester,MA,02124,Boston Property Assessment FY2026,2026-10-01T22:50Z"
+      }
+    ],
+    "outcome": "resolved: Boston",
+    "city_evidence": "municipal-assessor-roll: Harvard ST LOT 2A-13 (ev-749e064dda)",
+    "unknown_before": 3,
+    "unknown_after": 0,
+    "shared_conclusions": 11,
+    "request": null
+  },
+  {
+    "address_id": "A0346",
+    "address": "AUBURN DR, San Diego, CA 92105",
+    "original": "Census Geocoder found no match (address lacks a house number or is ambiguous); postal city is not proof of legal city",
+    "evidence": [
+      {
+        "id": "ev-c32dabf269",
+        "adapter": "census-zcta-place-2020",
+        "value": [
+          "San Diego"
+        ],
+        "status": "validated",
+        "reasons": [
+          "land area share: San Diego 100.00%"
+        ],
+        "span": "92105|San Diego city|AREALAND_PART=14906859|AREALAND_ZCTA5_20=14906859"
+      }
+    ],
+    "outcome": "ambiguous: San Diego | another municipality (ZIP evidence not corroborated)",
+    "city_evidence": "ambiguous: candidates San Diego, another municipality (ZIP evidence not corroborated) (ev-c32dabf269)",
+    "unknown_before": 20,
+    "unknown_after": 4,
+    "shared_conclusions": 4,
+    "request": "Which municipality is this address legally in?"
+  },
+  {
+    "address_id": "A0376",
+    "address": "ST JAMES ST, Roxbury, MA 02119",
+    "original": "Census Geocoder found no match (address lacks a house number or is ambiguous); postal city is not proof of legal city",
+    "evidence": [
+      {
+        "id": "ev-e1678d0a1a",
+        "adapter": "municipal-assessor-roll",
+        "value": "Boston",
+        "status": "validated",
+        "reasons": [],
+        "span": "A0376,ST JAMES ST,Roxbury,MA,02119,Boston Property Assessment FY2026,2026-10-01T22:50Z"
+      }
+    ],
+    "outcome": "resolved: Boston",
+    "city_evidence": "municipal-assessor-roll: ST JAMES ST (ev-e1678d0a1a)",
+    "unknown_before": 3,
+    "unknown_after": 0,
+    "shared_conclusions": 11,
+    "request": null
+  },
+  {
+    "address_id": "A0380",
+    "address": "GREENVILLE ST, Roxbury, MA 02119",
+    "original": "Census Geocoder found no match (address lacks a house number or is ambiguous); postal city is not proof of legal city",
+    "evidence": [
+      {
+        "id": "ev-b70f306566",
+        "adapter": "municipal-assessor-roll",
+        "value": "Boston",
+        "status": "validated",
+        "reasons": [],
+        "span": "A0380,GREENVILLE ST,Roxbury,MA,02119,Boston Property Assessment FY2026,2026-10-01T22:50Z"
+      }
+    ],
+    "outcome": "resolved: Boston",
+    "city_evidence": "municipal-assessor-roll: GREENVILLE ST (ev-b70f306566)",
+    "unknown_before": 3,
+    "unknown_after": 0,
+    "shared_conclusions": 11,
+    "request": null
+  },
+  {
+    "address_id": "A0384",
+    "address": "21 GUERRERO ST, San Francisco, CA ",
+    "original": "Census Geocoder found no match (address lacks a house number or is ambiguous); postal city is not proof of legal city",
+    "evidence": [
+      {
+        "id": "ev-679ff81f94",
+        "adapter": "municipal-assessor-roll",
+        "value": "San Francisco",
+        "status": "validated",
+        "reasons": [],
+        "span": "A0384,21 GUERRERO ST,San Francisco,CA,,DataSF wv5m-vpq2 (2025 roll),2026-10-01T22:50Z"
+      }
+    ],
+    "outcome": "resolved: San Francisco",
+    "city_evidence": "municipal-assessor-roll: 21 GUERRERO ST (ev-679ff81f94)",
+    "unknown_before": 20,
+    "unknown_after": 0,
+    "shared_conclusions": 10,
+    "request": null
+  }
+]

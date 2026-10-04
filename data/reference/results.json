@@ -1,0 +1,1839 @@
+{
+  "generated_at": "2026-10-04T10:38:49.889Z",
+  "reviewed_by": "Claude (AI assistant) on 2026-10-04, against corpus documents and sample rows. NOT independent of the system's author, NOT reviewed by counsel, NOT the organizers' answer key.",
+  "scored": {
+    "previous_release": {
+      "rows": [
+        {
+          "id": "C01",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C02",
+          "types": [
+            "precedence"
+          ],
+          "expected": "superseded",
+          "got": [
+            "superseded"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C03",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C04",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C05",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C06",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C07",
+          "types": [
+            "precedence"
+          ],
+          "expected": "superseded",
+          "got": [
+            "superseded"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C08",
+          "types": [
+            "cutoff_year"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "applies"
+          ],
+          "verdict": "overclaim"
+        },
+        {
+          "id": "C09",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C10",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C11",
+          "types": [
+            "missing_property_data"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C12",
+          "types": [
+            "missing_property_data"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C13",
+          "types": [
+            "missing_legal_version",
+            "conflicting_sources"
+          ],
+          "expected": "applies",
+          "got": [
+            "pending"
+          ],
+          "verdict": "wrong"
+        },
+        {
+          "id": "C14",
+          "types": [
+            "missing_legal_version",
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": null,
+          "verdict": "not_evaluable"
+        },
+        {
+          "id": "C15",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": null,
+          "verdict": "not_evaluable"
+        },
+        {
+          "id": "C16",
+          "types": [
+            "temporal"
+          ],
+          "expected": "applies",
+          "got": null,
+          "verdict": "not_evaluable"
+        },
+        {
+          "id": "C17",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C18",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C19",
+          "types": [
+            "temporal"
+          ],
+          "expected": "applies",
+          "got": null,
+          "verdict": "not_evaluable"
+        },
+        {
+          "id": "C20",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C21",
+          "types": [
+            "boundary"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C22",
+          "types": [
+            "incorrect_record",
+            "boundary"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C23",
+          "types": [
+            "incorrect_record"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C24",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C25",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C26",
+          "types": [
+            "conflicting_sources",
+            "temporal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C27",
+          "types": [
+            "temporal"
+          ],
+          "expected": "pending",
+          "got": [
+            "pending"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C28",
+          "types": [
+            "temporal"
+          ],
+          "expected": "pending",
+          "got": [
+            "pending"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C29",
+          "types": [
+            "incorrect_record",
+            "uncertain_identity"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "unknown",
+            "applies"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C30",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C31",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C32",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C33",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C34",
+          "types": [
+            "conflicting_sources"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies",
+            "pending"
+          ],
+          "verdict": "conflicting_outputs"
+        },
+        {
+          "id": "C35",
+          "types": [
+            "conflicting_sources",
+            "temporal"
+          ],
+          "expected": "indeterminate",
+          "got": null,
+          "verdict": "not_evaluable"
+        },
+        {
+          "id": "C36",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": null,
+          "verdict": "not_evaluable"
+        },
+        {
+          "id": "C37",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        }
+      ],
+      "summary": {
+        "evaluated": 31,
+        "definite_answers": 21,
+        "definitive_answer_accuracy": 0.905,
+        "resolution_coverage": 0.704,
+        "correct": 19,
+        "wrong": 1,
+        "overclaim": 1,
+        "conflicting_outputs": 1,
+        "unresolved": 6,
+        "correctly_indeterminate": 3,
+        "no_matching_rule": 0
+      }
+    },
+    "baseline_kleene": {
+      "rows": [
+        {
+          "id": "C01",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C02",
+          "types": [
+            "precedence"
+          ],
+          "expected": "superseded",
+          "got": [
+            "superseded"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C03",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C04",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C05",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C06",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C07",
+          "types": [
+            "precedence"
+          ],
+          "expected": "superseded",
+          "got": [
+            "superseded"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C08",
+          "types": [
+            "cutoff_year"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C09",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C10",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C11",
+          "types": [
+            "missing_property_data"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "applies",
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C12",
+          "types": [
+            "missing_property_data"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C13",
+          "types": [
+            "missing_legal_version",
+            "conflicting_sources"
+          ],
+          "expected": "applies",
+          "got": [
+            "pending"
+          ],
+          "verdict": "wrong"
+        },
+        {
+          "id": "C14",
+          "types": [
+            "missing_legal_version",
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "pending"
+          ],
+          "verdict": "wrong"
+        },
+        {
+          "id": "C15",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C16",
+          "types": [
+            "temporal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C17",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C18",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C19",
+          "types": [
+            "temporal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C20",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C21",
+          "types": [
+            "boundary"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C22",
+          "types": [
+            "incorrect_record",
+            "boundary"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C23",
+          "types": [
+            "incorrect_record"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C24",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C25",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C26",
+          "types": [
+            "conflicting_sources",
+            "temporal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C27",
+          "types": [
+            "temporal"
+          ],
+          "expected": "pending",
+          "got": [
+            "pending"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C28",
+          "types": [
+            "temporal"
+          ],
+          "expected": "pending",
+          "got": [
+            "pending"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C29",
+          "types": [
+            "incorrect_record",
+            "uncertain_identity"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable",
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C30",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C31",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C32",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "no_rule"
+          ],
+          "verdict": "no_matching_rule"
+        },
+        {
+          "id": "C33",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C34",
+          "types": [
+            "conflicting_sources"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C35",
+          "types": [
+            "conflicting_sources",
+            "temporal"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "applies"
+          ],
+          "verdict": "overclaim"
+        },
+        {
+          "id": "C36",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C37",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "applies"
+          ],
+          "verdict": "wrong"
+        }
+      ],
+      "summary": {
+        "evaluated": 37,
+        "definite_answers": 29,
+        "definitive_answer_accuracy": 0.862,
+        "resolution_coverage": 0.781,
+        "correct": 25,
+        "wrong": 3,
+        "overclaim": 1,
+        "conflicting_outputs": 0,
+        "unresolved": 4,
+        "correctly_indeterminate": 3,
+        "no_matching_rule": 1
+      }
+    },
+    "constraints": {
+      "rows": [
+        {
+          "id": "C01",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C02",
+          "types": [
+            "precedence"
+          ],
+          "expected": "superseded",
+          "got": [
+            "superseded"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C03",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C04",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C05",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C06",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C07",
+          "types": [
+            "precedence"
+          ],
+          "expected": "superseded",
+          "got": [
+            "superseded"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C08",
+          "types": [
+            "cutoff_year"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C09",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C10",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C11",
+          "types": [
+            "missing_property_data"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "applies",
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C12",
+          "types": [
+            "missing_property_data"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C13",
+          "types": [
+            "missing_legal_version",
+            "conflicting_sources"
+          ],
+          "expected": "applies",
+          "got": [
+            "pending"
+          ],
+          "verdict": "wrong"
+        },
+        {
+          "id": "C14",
+          "types": [
+            "missing_legal_version",
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "pending"
+          ],
+          "verdict": "wrong"
+        },
+        {
+          "id": "C15",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C16",
+          "types": [
+            "temporal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C17",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C18",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C19",
+          "types": [
+            "temporal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C20",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C21",
+          "types": [
+            "boundary"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C22",
+          "types": [
+            "incorrect_record",
+            "boundary"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C23",
+          "types": [
+            "incorrect_record"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C24",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C25",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C26",
+          "types": [
+            "conflicting_sources",
+            "temporal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C27",
+          "types": [
+            "temporal"
+          ],
+          "expected": "pending",
+          "got": [
+            "pending"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C28",
+          "types": [
+            "temporal"
+          ],
+          "expected": "pending",
+          "got": [
+            "pending"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C29",
+          "types": [
+            "incorrect_record",
+            "uncertain_identity"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable",
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C30",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C31",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "unresolved"
+        },
+        {
+          "id": "C32",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "no_rule"
+          ],
+          "verdict": "no_matching_rule"
+        },
+        {
+          "id": "C33",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C34",
+          "types": [
+            "conflicting_sources"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C35",
+          "types": [
+            "conflicting_sources",
+            "temporal"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "applies"
+          ],
+          "verdict": "overclaim"
+        },
+        {
+          "id": "C36",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C37",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "applies"
+          ],
+          "verdict": "wrong"
+        }
+      ],
+      "summary": {
+        "evaluated": 37,
+        "definite_answers": 29,
+        "definitive_answer_accuracy": 0.862,
+        "resolution_coverage": 0.781,
+        "correct": 25,
+        "wrong": 3,
+        "overclaim": 1,
+        "conflicting_outputs": 0,
+        "unresolved": 4,
+        "correctly_indeterminate": 3,
+        "no_matching_rule": 1
+      }
+    },
+    "enrichment": {
+      "rows": [
+        {
+          "id": "C01",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C02",
+          "types": [
+            "precedence"
+          ],
+          "expected": "superseded",
+          "got": [
+            "superseded"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C03",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C04",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C05",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C06",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C07",
+          "types": [
+            "precedence"
+          ],
+          "expected": "superseded",
+          "got": [
+            "superseded"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C08",
+          "types": [
+            "cutoff_year"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C09",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C10",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C11",
+          "types": [
+            "missing_property_data"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "applies",
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C12",
+          "types": [
+            "missing_property_data"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "unknown"
+          ],
+          "verdict": "correctly_indeterminate"
+        },
+        {
+          "id": "C13",
+          "types": [
+            "missing_legal_version",
+            "conflicting_sources"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C14",
+          "types": [
+            "missing_legal_version",
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C15",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C16",
+          "types": [
+            "temporal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C17",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C18",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C19",
+          "types": [
+            "temporal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C20",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C21",
+          "types": [
+            "boundary"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C22",
+          "types": [
+            "incorrect_record",
+            "boundary"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C23",
+          "types": [
+            "incorrect_record"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C24",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C25",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C26",
+          "types": [
+            "conflicting_sources",
+            "temporal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C27",
+          "types": [
+            "temporal"
+          ],
+          "expected": "pending",
+          "got": [
+            "pending"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C28",
+          "types": [
+            "temporal"
+          ],
+          "expected": "pending",
+          "got": [
+            "pending"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C29",
+          "types": [
+            "incorrect_record",
+            "uncertain_identity"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "not_applicable"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C30",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C31",
+          "types": [
+            "uncertain_identity"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C32",
+          "types": [
+            "missing_document"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "no_rule"
+          ],
+          "verdict": "no_matching_rule"
+        },
+        {
+          "id": "C33",
+          "types": [
+            "normal"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C34",
+          "types": [
+            "conflicting_sources"
+          ],
+          "expected": "applies",
+          "got": [
+            "applies"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C35",
+          "types": [
+            "conflicting_sources",
+            "temporal"
+          ],
+          "expected": "indeterminate",
+          "got": [
+            "applies"
+          ],
+          "verdict": "overclaim"
+        },
+        {
+          "id": "C36",
+          "types": [
+            "temporal"
+          ],
+          "expected": "not_yet_effective",
+          "got": [
+            "not_yet_effective"
+          ],
+          "verdict": "correct"
+        },
+        {
+          "id": "C37",
+          "types": [
+            "normal"
+          ],
+          "expected": "not_applicable",
+          "got": [
+            "applies"
+          ],
+          "verdict": "wrong"
+        }
+      ],
+      "summary": {
+        "evaluated": 37,
+        "definite_answers": 33,
+        "definitive_answer_accuracy": 0.939,
+        "resolution_coverage": 0.969,
+        "correct": 31,
+        "wrong": 1,
+        "overclaim": 1,
+        "conflicting_outputs": 0,
+        "unresolved": 0,
+        "correctly_indeterminate": 3,
+        "no_matching_rule": 1
+      }
+    }
+  },
+  "population": {
+    "baseline_kleene": {
+      "unknown_rule_results": 565,
+      "properties_with_unknown": 215
+    },
+    "constraints": {
+      "unknown_rule_results": 565,
+      "properties_with_unknown": 215,
+      "decisive_questions_total": 385,
+      "mean_questions_per_open_property": 1.79
+    },
+    "enrichment": {
+      "unknown_rule_results": 511,
+      "properties_with_unknown": 207,
+      "decisive_questions_total": 369,
+      "mean_questions_per_open_property": 1.78
+    }
+  },
+  "masking": {
+    "properties": 151,
+    "questions_asked": 149,
+    "mean_questions": 0.99,
+    "max_questions": 1,
+    "properties_fully_resolved_on_masked_facts": 149,
+    "oracle_could_not_answer": 2,
+    "definite_results_compared": 7238,
+    "agreement_with_full_data": 1
+  },
+  "evidence_quality": {
+    "records": 310,
+    "by_status": {
+      "inconclusive": 114,
+      "validated": 196
+    },
+    "validated_with_span_url_time": "196/196",
+    "by_adapter": {
+      "nj-modiv-parcels": {
+        "validated": 0,
+        "inconclusive": 106,
+        "rejected": 0
+      },
+      "municipal-assessor-roll": {
+        "validated": 190,
+        "inconclusive": 0,
+        "rejected": 0
+      },
+      "ladbs-cofo": {
+        "validated": 0,
+        "inconclusive": 8,
+        "rejected": 0
+      },
+      "njgin-geocoder+nj-municipal-boundaries": {
+        "validated": 2,
+        "inconclusive": 0,
+        "rejected": 0
+      },
+      "sdmc-codified-history": {
+        "validated": 2,
+        "inconclusive": 0,
+        "rejected": 0
+      },
+      "census-zcta-place-2020": {
+        "validated": 2,
+        "inconclusive": 0,
+        "rejected": 0
+      }
+    }
+  },
+  "latency": {
+    "sdmc-pdf": {
+      "calls": 2,
+      "cached": 2,
+      "failed": 0,
+      "median_ms": 1241,
+      "p95_ms": 1241,
+      "measured": 2
+    },
+    "nj-modiv-parcels": {
+      "calls": 106,
+      "cached": 106,
+      "failed": 0,
+      "median_ms": 281,
+      "p95_ms": 620,
+      "measured": 106
+    },
+    "ladbs-cofo": {
+      "calls": 8,
+      "cached": 8,
+      "failed": 0,
+      "median_ms": 688,
+      "p95_ms": 10002,
+      "measured": 8
+    },
+    "census-zcta-place-2020": {
+      "calls": 2,
+      "cached": 2,
+      "failed": 0,
+      "median_ms": 168,
+      "p95_ms": 168,
+      "measured": 2
+    },
+    "njgin-geocode": {
+      "calls": 2,
+      "cached": 2,
+      "failed": 0,
+      "median_ms": 616,
+      "p95_ms": 616,
+      "measured": 2
+    },
+    "nj-municipal-boundaries": {
+      "calls": 2,
+      "cached": 2,
+      "failed": 0,
+      "median_ms": 644,
+      "p95_ms": 644,
+      "measured": 2
+    }
+  }
+}

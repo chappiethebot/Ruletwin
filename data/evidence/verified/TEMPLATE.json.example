@@ -1,0 +1,16 @@
+[
+  {
+    "subject": { "property_id": "A0001", "level": "parcel", "key": "APN from ZIMAS" },
+    "field": "rso_status",
+    "value": "yes",
+    "valid": { "from": "2026-10-04", "to_exclusive": null },
+    "source": {
+      "adapter": "zimas-manual",
+      "url": "https://zimas.lacity.org/",
+      "retrieved_at": "2026-10-04T15:00:00Z",
+      "span": "Rent Stabilization Ordinance (RSO): Yes",
+      "terms": "City of Los Angeles ZIMAS public web application, read manually"
+    },
+    "reasons": ["reviewer: <your name>"]
+  }
+]

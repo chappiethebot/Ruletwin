@@ -1,0 +1,50 @@
+{
+  "sdmc-pdf": {
+    "calls": 2,
+    "cached": 2,
+    "failed": 0,
+    "median_ms": 1241,
+    "p95_ms": 1241,
+    "measured": 2
+  },
+  "nj-modiv-parcels": {
+    "calls": 106,
+    "cached": 106,
+    "failed": 0,
+    "median_ms": 281,
+    "p95_ms": 620,
+    "measured": 106
+  },
+  "ladbs-cofo": {
+    "calls": 8,
+    "cached": 8,
+    "failed": 0,
+    "median_ms": 688,
+    "p95_ms": 10002,
+    "measured": 8
+  },
+  "census-zcta-place-2020": {
+    "calls": 2,
+    "cached": 2,
+    "failed": 0,
+    "median_ms": 168,
+    "p95_ms": 168,
+    "measured": 2
+  },
+  "njgin-geocode": {
+    "calls": 2,
+    "cached": 2,
+    "failed": 0,
+    "median_ms": 616,
+    "p95_ms": 616,
+    "measured": 2
+  },
+  "nj-municipal-boundaries": {
+    "calls": 2,
+    "cached": 2,
+    "failed": 0,
+    "median_ms": 644,
+    "p95_ms": 644,
+    "measured": 2
+  }
+}

@@ -1,0 +1,3 @@
+doc_id,jurisdictions,url,source_type,capture,retrieved_at,sha256,text_file,status
+S037,"Jersey City, NJ; Hoboken, NJ; Berkeley, CA",https://www.morganlewis.com/pubs/2026/08/algorithmic-rent-pricing-litigation-expands-under-new-state-and-local-laws,secondary (law firm / news / mirror),team-fetched,2026-10-04,1fbeb0d12337dcfe964f7126831f2b5fd14cbe761a2c52dfed5275e8c708157f,text/S037.txt,ok
+S059,MA,https://www.wbur.org/news/2026/06/23/massachusetts-high-court-rent-control-ballot-question-struck,secondary (law firm / news / mirror),team-fetched,2026-10-04,60267b98d14db0eedce968a224476ba3710a907f624620f7bd8fc9e418136e90,text/S059.txt,ok
