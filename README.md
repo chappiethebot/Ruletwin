@@ -1,7 +1,9 @@
 # RuleTwin — Rental Housing Law Navigator
 
 Which rental-housing rules apply at this address on this date, and what is about to change?
-Built for Hack-Nation × RealPage, Challenge 02. Runs locally on your computer.
+Built for Hack-Nation × RealPage, Challenge 02.
+
+**Live demo:** https://ruletwin.vercel.app (read-only) · **Method note:** [docs/METHOD_NOTE.md](docs/METHOD_NOTE.md) · **Submission:** [submission/](submission/) (rules.json, lookups.json, changes.json, audit_log.json)
 
 **Legal information, not legal advice.** Machine-extracted from the supplied corpus; not reviewed by counsel.
 

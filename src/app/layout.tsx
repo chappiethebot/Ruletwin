@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import { Nav } from "@/components/nav";
 import { HOSTED_DEMO, currentUser } from "@/lib/auth";
 import { signOut } from "@/lib/actions";
-import { getSnapshot } from "@/lib/data";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -16,7 +15,6 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const user = HOSTED_DEMO ? null : await currentUser();
-  const snap = getSnapshot();
   return (
     <html lang="en" className={inter.variable}>
       <body className="flex min-h-screen flex-col antialiased">
@@ -47,10 +45,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <div className="mx-auto flex max-w-[1180px] flex-wrap items-center gap-x-6 gap-y-2 px-4 py-6 text-[13px] text-muted lg:px-8">
             <span>Legal information, not legal advice.</span>
             <span className="flex gap-4 md:ml-auto">
-              {snap && <span className="hidden sm:inline">Snapshot <span className="font-mono">{snap.id}</span></span>}
-              <a className="transition-colors hover:text-ink" href="/api/export/rules.json">rules.json</a>
-              <a className="transition-colors hover:text-ink" href="/api/export/lookups.json">lookups.json</a>
-              <a className="transition-colors hover:text-ink" href="/api/export/changes.json">changes.json</a>
+              <a className="transition-colors hover:text-ink" href="https://github.com/chappiethebot/Ruletwin/blob/main/docs/METHOD_NOTE.md">Method</a>
+              <a className="transition-colors hover:text-ink" href="/api/export/rules.json">Rules data</a>
+              <a className="transition-colors hover:text-ink" href="/api/export/lookups.json">Lookups</a>
+              <a className="transition-colors hover:text-ink" href="/api/export/changes.json">Changes</a>
             </span>
           </div>
         </footer>

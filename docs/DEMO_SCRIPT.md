@@ -16,6 +16,9 @@ v5 submission package: `rules.json`, `lookups.json`, `changes.json`, a **live de
 - `submission/audit_log.json`: input hashes (v5 pack), extraction ledger (89 entries, 0 errors), output hashes, rerun commands.
 - `docs/EVALUATION.md`: 37 AI-reviewed reference cases (31/33 definite answers correct, misses explained). Say clearly that it is our own check, not an official score.
 
+## Recorded videos
+See `docs/VIDEO_PROMPTS.md`: ElevenLabs voice/music prompts; `node scripts/demo-video.ts` records both 1080p videos from the real site.
+
 ## Optional: automated extraction live
 `node scripts/ingest.ts --file <ordinance.txt> --jurisdiction "City, ST"`: the extractor reads a new text unaided, validates quotes, publishes, and the new case appears under Changes (not in the official `changes.json`).
 

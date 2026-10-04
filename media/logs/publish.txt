@@ -1,0 +1,17 @@
+resolution: { conditional: 511, constraints: 16 } limit reached on 0 properties
+48 rules (73 candidates), 500 properties
+results: {
+  not_applicable: 19247,
+  applies: 3373,
+  superseded: 289,
+  not_yet_effective: 140,
+  unknown: 511,
+  pending: 440
+}
+T1: 250 affected, 0 conflict-flagged, rules r-2fcd4b
+T2: 90 affected, 0 conflict-flagged, rules r-2631aa,r-8c87fb
+T3: 140 affected, 90 conflict-flagged, rules r-6e5a6f
+T4: 110 affected, 0 conflict-flagged, rules r-ec514b,r-bd9ba7
+T5: 0 affected, 0 conflict-flagged, rules r-faf046
+snap-eea786560def already published with identical content; not rewritten.
+published snap-eea786560def (previous: snap-96c4ceacda7b); exports in submission/

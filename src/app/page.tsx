@@ -37,9 +37,6 @@ export default function Home() {
         </div>
       ) : <p className="mt-10 text-muted">No snapshot published yet.</p>}
 
-      <p className="mt-16 animate-fade text-[13px] text-muted [animation-delay:400ms]">
-        {snap ? `${snap.rule_count} rules · ${snap.property_count} sample buildings · California, New Jersey, Massachusetts` : ""}
-      </p>
     </main>
   );
 }

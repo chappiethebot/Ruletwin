@@ -1,0 +1,17 @@
+PASS  1440px landing renders with coverage + disclaimer
+PASS  1440px address search → analyze
+PASS  1440px evidence drawer opens, Esc closes, focus returns
+PASS  1440px conditional rule shows branches; answering a clarification re-evaluates as hypothetical
+PASS  1440px changes T3 shows conflict-flagged NJ addresses
+PASS  1440px rule library filters
+PASS  sign-up → save property → reload persists
+PASS  1440px no console errors
+PASS  390px landing renders with coverage + disclaimer
+PASS  390px address search → analyze
+PASS  390px evidence drawer opens, Esc closes, focus returns
+PASS  390px conditional rule shows branches; answering a clarification re-evaluates as hypothetical
+PASS  390px changes T3 shows conflict-flagged NJ addresses
+PASS  390px rule library filters
+PASS  390px no console errors
+PASS  second session cannot see first user's saved data
+16/16 passed
