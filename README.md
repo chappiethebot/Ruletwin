@@ -105,6 +105,4 @@ See `AGENTS.md` (instructions and invariants), `HANDOFF.md` (status) and `docs/D
 
 ## Verified release and remaining work
 
-The 2026-10-04 v5 review checked 48 rules and all 500 properties: 24,000 pairs, 511 unknown results on 207 properties and zero published-result mismatches. The new pack's 65 files are byte-identical to the earlier participant download. Detailed checks, remaining work and the separately prepared repair are in [V5_CHALLENGE_REVIEW.md](docs/V5_CHALLENGE_REVIEW.md).
-
 The isolated repair passed 55 tests, typecheck, lint, a production Webpack build and 16 browser journeys. Its snapshot is `snap-3e8d479e4ac6`; the reviewed main-checkout baseline was `snap-96c4ceacda7b`. Check the active pointer after integration. Default-bundler verification and a public live deployment remain release steps. Missing source clauses, unsupported presumptions and independent legal verification remain open.
